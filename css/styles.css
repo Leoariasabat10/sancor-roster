@@ -123,11 +123,11 @@ img{display:block;max-width:100%;height:auto}
   @keyframes drift{to{transform:translateY(var(--dy))}}
 }
 /* Entrada: CSS puro, no depende de JS */
-.js .hero-title .mask>span{transform:translateY(105%);animation:rise 1s var(--ease) .5s forwards}
-.js .hero-title .mask:nth-child(2)>span{animation-delay:.62s}
-.js .hero-title .mask:nth-child(3)>span{animation-delay:.74s}
+.js .hero-title .mask>span{transform:translateY(105%);animation:rise .9s var(--ease) .1s forwards}
+.js .hero-title .mask:nth-child(2)>span{animation-delay:.2s}
+.js .hero-title .mask:nth-child(3)>span{animation-delay:.3s}
 @keyframes rise{to{transform:none}}
-.js .hero-foot{opacity:0;animation:fadein .9s var(--ease) 1.1s forwards}
+.js .hero-stats,.js .hero-cta{opacity:0;animation:fadein .7s var(--ease) .6s forwards}
 @keyframes fadein{to{opacity:1}}
 .js .shot{clip-path:inset(100% 0 0 0);animation:shot-in 1.1s var(--ease) calc(.6s + var(--n,0) * 80ms) forwards}
 @keyframes shot-in{to{clip-path:inset(0)}}
@@ -139,6 +139,9 @@ img{display:block;max-width:100%;height:auto}
 @keyframes sg-fade{from{opacity:0}to{opacity:1}}
 
 /* ---------- Secciones ---------- */
+/* Lo que está bajo el pliegue no se estiliza/pinta hasta acercarse (menos trabajo en la carga inicial) */
+.elite,.pack,.contact,.footer,.index{content-visibility:auto;contain-intrinsic-size:auto 900px}
+
 main>section{padding:var(--section) var(--g)}
 .section-head{margin-bottom:clamp(2rem,5vw,4rem);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem 3rem}
 .section-note{color:var(--steel);max-width:34ch}
@@ -338,5 +341,5 @@ html:has(dialog[open]){overflow:hidden}
   *,*::before,*::after{animation:none!important;transition-property:color,background-color,border-color,opacity,filter!important;transition-duration:.15s!important;transition-delay:0s!important;scroll-behavior:auto!important}
   .js .hero-title .mask>span,.js .reveal-mask .mask>span{transform:none}
   .js .shot,.js .poster[data-reveal] .poster-media{clip-path:none}
-  .js .hero-foot,.js [data-reveal]{opacity:1;translate:none}
+  .js .hero-stats,.js .hero-cta,.js [data-reveal]{opacity:1;translate:none}
 }
