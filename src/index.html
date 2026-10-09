@@ -64,6 +64,12 @@
   <a class="scroll-cue" href="#cotizar" aria-label="Bajar al contenido"><span></span></a>
 </section>
 
+<section class="faces" aria-label="Retratos del roster">
+  <ul class="faces-track">
+<!--FACES-->
+  </ul>
+</section>
+
 <section class="how" id="cotizar" aria-labelledby="how-title">
   <h2 id="how-title" class="serif-statement" data-reveal>Cada show se negocia caso a caso.</h2>
   <div class="how-body" data-reveal>
@@ -159,7 +165,28 @@
 <footer class="footer">
   <img src="img/logo-light.webp" alt="SANCOR MGMT" width="832" height="390" loading="lazy">
   <p>Precios referenciales en USD. Sujetos a disponibilidad, fecha y ciudad. No incluyen logística salvo que se indique.</p>
+  <details class="credits">
+    <summary>Créditos de fotografía</summary>
+    <p>Fotos de {{PHOTOS}} artistas tomadas de Wikimedia Commons con licencia libre. Autor y licencia de cada una:</p>
+    <ul>
+        <!--CREDITS-->
+    </ul>
+  </details>
   <p>© 2026 Sancor MGMT</p>
 </footer>
+
+<dialog class="profile" id="profile" aria-labelledby="pf-name">
+  <form method="dialog"><button class="pf-close" aria-label="Cerrar ficha"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg></button></form>
+  <div class="pf-media" id="pf-media"></div>
+  <div class="pf-body">
+    <p class="pf-genre" id="pf-genre"></p>
+    <h2 class="pf-name" id="pf-name"></h2>
+    <p class="pf-range" id="pf-range"></p>
+    <p class="pf-note">Tarifa referencial. Se negocia caso a caso según venue, evento, aforo, ciudad y promotor.</p>
+    <a class="btn btn-solid" id="pf-cta" href="#" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+    <p class="pf-credit" id="pf-credit"></p>
+  </div>
+</dialog>
+<script type="application/json" id="roster-data"><!--DATA--></script>
 </body>
 </html>

@@ -78,4 +78,32 @@
     apply(false);
     search.focus();
   });
+
+  // ---- Ficha del artista (progresivo: sin JS, los enlaces van directo a WhatsApp) ----
+  const dlg = $('#profile');
+  const data = JSON.parse($('#roster-data').textContent);
+  const el = (tag, attrs = {}, text) => Object.assign(document.createElement(tag), attrs, text !== undefined && { textContent: text });
+  const link = (href, text) => el('a', { href, target: '_blank', rel: 'noopener noreferrer' }, text);
+  const mono = (n) => n.split(/\s+/).filter((w) => /^\p{L}/u.test(w)).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
+
+  function openProfile(i) {
+    const a = data[i];
+    $('#pf-name').textContent = a.n;
+    $('#pf-genre').textContent = a.g;
+    $('#pf-range').textContent = a.r;
+    $('#pf-cta').href = a.q;
+    const media = $('#pf-media');
+    media.replaceChildren(a.p ? el('img', { src: a.p, alt: `Retrato de ${a.n}` }) : el('span', { className: 'mono', ariaHidden: 'true' }, mono(a.n)));
+    const cr = $('#pf-credit');
+    cr.replaceChildren();
+    if (a.c) cr.append('Foto: ', link(a.c.source, a.c.author || 'Wikimedia Commons'), ', ', a.c.licenseUrl ? link(a.c.licenseUrl, a.c.license) : a.c.license);
+    dlg.showModal();
+  }
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[data-i]');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+    e.preventDefault();
+    openProfile(+a.dataset.i);
+  });
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); }); // clic en el fondo
 })();

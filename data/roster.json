@@ -5,7 +5,18 @@
    "name": "Arcangel",
    "genre": "urbano",
    "lo": 250,
-   "hi": 500
+   "hi": 500,
+   "photo": "img/artistas/arcangel.webp",
+   "photoSize": [
+    720,
+    956
+   ],
+   "credit": {
+    "author": "Tony Dandrades",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Arc%C3%A1ngel_2023_Interview_-_Tony_Dandrades.png"
+   }
   },
   {
    "name": "Beele",
@@ -17,37 +28,103 @@
    "name": "Rauw Alejandro",
    "genre": "urbano",
    "lo": 250,
-   "hi": 500
+   "hi": 500,
+   "photo": "img/artistas/rauw-alejandro.webp",
+   "photoSize": [
+    631,
+    1000
+   ],
+   "credit": {
+    "author": "Junta de Andalucía",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2023-11-16_Gala_de_los_Latin_Grammy,_13_(cropped).jpg"
+   }
   },
   {
    "name": "Nicky Jam",
    "genre": "urbano",
    "lo": 200,
-   "hi": 300
+   "hi": 300,
+   "photo": "img/artistas/nicky-jam.webp",
+   "photoSize": [
+    720,
+    956
+   ],
+   "credit": {
+    "author": "Emmanuel1152",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nicky_Jam_2024_(cropped).jpg"
+   }
   },
   {
    "name": "Ozuna",
    "genre": "urbano",
    "lo": 200,
-   "hi": 300
+   "hi": 300,
+   "photo": "img/artistas/ozuna.webp",
+   "photoSize": [
+    318,
+    565
+   ],
+   "credit": {
+    "author": "Sony Music Entertainment Sweden via Mynewsdesk",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ozuna-2019.jpg"
+   }
   },
   {
    "name": "Myke Towers",
    "genre": "urbano",
    "lo": 200,
-   "hi": 300
+   "hi": 300,
+   "photo": "img/artistas/myke-towers.webp",
+   "photoSize": [
+    720,
+    921
+   ],
+   "credit": {
+    "author": "Tony Dandrades",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Myke_Towers_in_interview_-_Tony_Dandrades_-_2021.png"
+   }
   },
   {
    "name": "Ryan Castro",
    "genre": "urbano",
    "lo": 200,
-   "hi": 300
+   "hi": 300,
+   "photo": "img/artistas/ryan-castro.webp",
+   "photoSize": [
+    667,
+    1000
+   ],
+   "credit": {
+    "author": "Andrelovanegas",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ryan_Castro.jpg"
+   }
   },
   {
    "name": "Camilo",
    "genre": "urbano",
    "lo": 200,
-   "hi": 300
+   "hi": 300,
+   "photo": "img/artistas/camilo.webp",
+   "photoSize": [
+    421,
+    566
+   ],
+   "credit": {
+    "author": "Camilo",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Camilo_in_2019.jpg"
+   }
   },
   {
    "name": "Chencho Corleone",
@@ -59,19 +136,52 @@
    "name": "Blessd",
    "genre": "urbano",
    "lo": 150,
-   "hi": 250
+   "hi": 250,
+   "photo": "img/artistas/blessd.webp",
+   "photoSize": [
+    576,
+    384
+   ],
+   "credit": {
+    "author": "Rossana94leal",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Blessd_en_2026.jpg"
+   }
   },
   {
    "name": "Anuel",
    "genre": "urbano",
    "lo": 150,
-   "hi": 250
+   "hi": 250,
+   "photo": "img/artistas/anuel.webp",
+   "photoSize": [
+    720,
+    960
+   ],
+   "credit": {
+    "author": "Tony Dandrades",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Anuel_AA_in_2022_2.jpg"
+   }
   },
   {
    "name": "Farruko",
    "genre": "urbano",
    "lo": 150,
-   "hi": 250
+   "hi": 250,
+   "photo": "img/artistas/farruko.webp",
+   "photoSize": [
+    714,
+    1000
+   ],
+   "credit": {
+    "author": "Tony Dandrades",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Farruko,_2021_-_interview_with_Tony_Dandrades.jpeg"
+   }
   },
   {
    "name": "Kapo",
@@ -83,19 +193,52 @@
    "name": "Sebastián Yatra",
    "genre": "urbano",
    "lo": 150,
-   "hi": 250
+   "hi": 250,
+   "photo": "img/artistas/sebastian-yatra.webp",
+   "photoSize": [
+    720,
+    960
+   ],
+   "credit": {
+    "author": "Junta de Andalucía",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2023-11-16_Gala_de_los_Latin_Grammy,_05_(cropped).jpg"
+   }
   },
   {
    "name": "Manuel Turizo",
    "genre": "urbano",
    "lo": 150,
-   "hi": 250
+   "hi": 250,
+   "photo": "img/artistas/manuel-turizo.webp",
+   "photoSize": [
+    720,
+    930
+   ],
+   "credit": {
+    "author": "LA LATA",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Manuel_Turizo_in_2020.jpg"
+   }
   },
   {
    "name": "Yandel",
    "genre": "urbano",
    "lo": 150,
-   "hi": 250
+   "hi": 250,
+   "photo": "img/artistas/yandel.webp",
+   "photoSize": [
+    713,
+    1000
+   ],
+   "credit": {
+    "author": "José Javy Ferrer",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yandel_-_Como_Si_El_Mundo_Se_Fuera_A_Acabar_-_Behind_to_Scenes.png"
+   }
   },
   {
    "name": "Jhayco",
@@ -107,19 +250,52 @@
    "name": "Justin Quiles",
    "genre": "urbano",
    "lo": 100,
-   "hi": 150
+   "hi": 150,
+   "photo": "img/artistas/justin-quiles.webp",
+   "photoSize": [
+    454,
+    608
+   ],
+   "credit": {
+    "author": "Tony Dandrades",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Justin_Quiles_in_interview_-_Tony_Dandrades.png"
+   }
   },
   {
    "name": "Young Miko",
    "genre": "urbano",
    "lo": 100,
-   "hi": 150
+   "hi": 150,
+   "photo": "img/artistas/young-miko.webp",
+   "photoSize": [
+    720,
+    847
+   ],
+   "credit": {
+    "author": "Latinos En Pelota",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:YOUNG_MIKO_(Vb6-eaqyUe0)_(cropped).png"
+   }
   },
   {
    "name": "Eladio Carrión",
    "genre": "urbano",
    "lo": 100,
-   "hi": 150
+   "hi": 150,
+   "photo": "img/artistas/eladio-carrion.webp",
+   "photoSize": [
+    720,
+    720
+   ],
+   "credit": {
+    "author": "Latinos En Pelota",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Eladio_Carrion_(p-B3-_Ng8bg).png"
+   }
   },
   {
    "name": "Lenny Tavárez",
@@ -131,7 +307,18 @@
    "name": "De La Ghetto",
    "genre": "urbano",
    "lo": 55,
-   "hi": 100
+   "hi": 100,
+   "photo": "img/artistas/de-la-ghetto.webp",
+   "photoSize": [
+    720,
+    917
+   ],
+   "credit": {
+    "author": "Tony Dandrades",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:De_la_Ghetto,_interview_with_Tony_Dandrades_(2020).png"
+   }
   },
   {
    "name": "Jowell y Randy",
@@ -149,7 +336,18 @@
    "name": "Ñengo Flow",
    "genre": "urbano",
    "lo": 55,
-   "hi": 100
+   "hi": 100,
+   "photo": "img/artistas/nengo-flow.webp",
+   "photoSize": [
+    648,
+    803
+   ],
+   "credit": {
+    "author": "Late Nite Promotions",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%91engo_Flow_in_interview_-_Late_Nite_Promotions_2012.png"
+   }
   },
   {
    "name": "Hades",
@@ -167,7 +365,18 @@
    "name": "Cosculluela",
    "genre": "urbano",
    "lo": 55,
-   "hi": 100
+   "hi": 100,
+   "photo": "img/artistas/cosculluela.webp",
+   "photoSize": [
+    547,
+    660
+   ],
+   "credit": {
+    "author": "Tony Dandrades",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cosculluela_2020_Interview_-_Tony_Dandrades.jpg"
+   }
   },
   {
    "name": "Young Chimi",
@@ -185,25 +394,69 @@
    "name": "Greeicy",
    "genre": "urbano",
    "lo": 55,
-   "hi": 100
+   "hi": 100,
+   "photo": "img/artistas/greeicy.webp",
+   "photoSize": [
+    720,
+    800
+   ],
+   "credit": {
+    "author": "Telemedellín+",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Greeicy_en_2019_02.jpg"
+   }
   },
   {
    "name": "Piso 21",
    "genre": "urbano",
    "lo": 55,
-   "hi": 100
+   "hi": 100,
+   "photo": "img/artistas/piso-21.webp",
+   "photoSize": [
+    667,
+    1000
+   ],
+   "credit": {
+    "author": "Bettoverdugo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Piso_21.jpg"
+   }
   },
   {
    "name": "Cali y El Dandee",
    "genre": "urbano",
    "lo": 55,
-   "hi": 100
+   "hi": 100,
+   "photo": "img/artistas/cali-y-el-dandee.webp",
+   "photoSize": [
+    720,
+    533
+   ],
+   "credit": {
+    "author": "NotimexTV",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cali_y_El_Dandee_en_una_entrevista.jpg"
+   }
   },
   {
    "name": "Bryant Myers",
    "genre": "urbano",
    "lo": 55,
-   "hi": 100
+   "hi": 100,
+   "photo": "img/artistas/bryant-myers.webp",
+   "photoSize": [
+    475,
+    624
+   ],
+   "credit": {
+    "author": "José Javy Ferrer",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bryant_Myers_-_Sarala_TV_-_C%C3%A1psula_15_(cropped).png"
+   }
   },
   {
    "name": "Sech",
@@ -215,19 +468,52 @@
    "name": "Dei V",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/dei-v.webp",
+   "photoSize": [
+    532,
+    782
+   ],
+   "credit": {
+    "author": "Omar Courtz",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dei_V_(Drippeo_Kbron_-_2024)_v2.png"
+   }
   },
   {
    "name": "J Álvarez",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/j-alvarez.webp",
+   "photoSize": [
+    720,
+    956
+   ],
+   "credit": {
+    "author": "Moyopoyo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:J_Alvarez_Icebox_2019_(cropped).jpg"
+   }
   },
   {
    "name": "Ñejo",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/nejo.webp",
+   "photoSize": [
+    624,
+    706
+   ],
+   "credit": {
+    "author": "Telemedellín (Programas Telemedellín)",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%91ejo_in_interview_-_Telemedell%C3%ADn_2019.png"
+   }
   },
   {
    "name": "Darell",
@@ -245,7 +531,18 @@
    "name": "Alexis y Fido",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/alexis-y-fido.webp",
+   "photoSize": [
+    720,
+    525
+   ],
+   "credit": {
+    "author": "festivaldevinachile",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Alexis_%26_Fido_en_Vi%C3%B1a_del_Mar.jpg"
+   }
   },
   {
    "name": "Lennox",
@@ -263,13 +560,35 @@
    "name": "Brytiago",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/brytiago.webp",
+   "photoSize": [
+    720,
+    690
+   ],
+   "credit": {
+    "author": "El Cartel Records",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Brytiago_Alerta_Roja.png"
+   }
   },
   {
    "name": "Tony Dize",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/tony-dize.webp",
+   "photoSize": [
+    540,
+    720
+   ],
+   "credit": {
+    "author": "Zohelvilla",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Tony_dize_colombia.jpg"
+   }
   },
   {
    "name": "Chimbala",
@@ -281,13 +600,35 @@
    "name": "Andy Rivera",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/andy-rivera.webp",
+   "photoSize": [
+    612,
+    612
+   ],
+   "credit": {
+    "author": "Harold Rivera",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Andy_Rivera.jpg"
+   }
   },
   {
    "name": "Kevin Roldán",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/kevin-roldan.webp",
+   "photoSize": [
+    720,
+    892
+   ],
+   "credit": {
+    "author": "Carroya",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kevin_Rold%C3%A1n_-_Carroya_-_2014.png"
+   }
   },
   {
    "name": "Alleh y Yorghaki",
@@ -299,7 +640,18 @@
    "name": "Reykon",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/reykon.webp",
+   "photoSize": [
+    372,
+    527
+   ],
+   "credit": {
+    "author": "DRUMS RAM",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Reykon_2019.png"
+   }
   },
   {
    "name": "Big Soto",
@@ -329,13 +681,35 @@
    "name": "Luigi 21 Plus",
    "genre": "urbano",
    "lo": 20,
-   "hi": 35
+   "hi": 35,
+   "photo": "img/artistas/luigi-21-plus.webp",
+   "photoSize": [
+    720,
+    895
+   ],
+   "credit": {
+    "author": "Bonchevip / World Star Latin",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Luigi_21_Plus_in_interview_-_World_Latin_Star_2019.png"
+   }
   },
   {
    "name": "Omar Courtz",
    "genre": "urbano",
    "lo": 20,
-   "hi": 35
+   "hi": 35,
+   "photo": "img/artistas/omar-courtz.webp",
+   "photoSize": [
+    720,
+    720
+   ],
+   "credit": {
+    "author": "Omar Courtz",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Omar_Courtz_%22Goddess%22_2024.png"
+   }
   },
   {
    "name": "Miky Woodz",
@@ -347,7 +721,18 @@
    "name": "Jon Z",
    "genre": "urbano",
    "lo": 20,
-   "hi": 35
+   "hi": 35,
+   "photo": "img/artistas/jon-z.webp",
+   "photoSize": [
+    720,
+    913
+   ],
+   "credit": {
+    "author": "Bonchevip / World Latin Star",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jon_Z_in_interview_-_World_Latin_Star_2019.png"
+   }
   },
   {
    "name": "Jombriel",
@@ -365,7 +750,18 @@
    "name": "Noriel",
    "genre": "urbano",
    "lo": 20,
-   "hi": 35
+   "hi": 35,
+   "photo": "img/artistas/noriel.webp",
+   "photoSize": [
+    720,
+    905
+   ],
+   "credit": {
+    "author": "Fuleteo The Show",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Noriel_in_Mexico_-_Trap_Capos_Tour_-_2017.png"
+   }
   },
   {
    "name": "Mackie",
@@ -377,7 +773,18 @@
    "name": "Llane",
    "genre": "urbano",
    "lo": 20,
-   "hi": 35
+   "hi": 35,
+   "photo": "img/artistas/llane.webp",
+   "photoSize": [
+    472,
+    600
+   ],
+   "credit": {
+    "author": "Juan David Castaño",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:LLANE.jpg"
+   }
   },
   {
    "name": "Crissin",
@@ -425,7 +832,18 @@
    "name": "Trébol Clan",
    "genre": "urbano",
    "lo": 10,
-   "hi": 20
+   "hi": 20,
+   "photo": "img/artistas/trebol-clan.webp",
+   "photoSize": [
+    685,
+    523
+   ],
+   "credit": {
+    "author": "DarckZion",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Periquito_y_DJ_Joe_de_Tr%C3%A9bol_Clan_en_Lima.png"
+   }
   },
   {
    "name": "Anonimus",
@@ -437,7 +855,18 @@
    "name": "Boza",
    "genre": "urbano",
    "lo": 10,
-   "hi": 20
+   "hi": 20,
+   "photo": "img/artistas/boza.webp",
+   "photoSize": [
+    674,
+    871
+   ],
+   "credit": {
+    "author": "Maritza Ariza Periodista",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Boza_en_Premios_Nuestra_Tierra_2022.jpg"
+   }
   },
   {
    "name": "Jory Boy",
@@ -449,7 +878,18 @@
    "name": "Yailin la Más Viral",
    "genre": "urbano",
    "lo": 10,
-   "hi": 20
+   "hi": 20,
+   "photo": "img/artistas/yailin-la-mas-viral.webp",
+   "photoSize": [
+    410,
+    583
+   ],
+   "credit": {
+    "author": "Tony Dandrades",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yailin_la_m%C3%A1s_Viral_Premios_Heat_01.jpg"
+   }
   },
   {
    "name": "Pressure",
@@ -491,7 +931,18 @@
    "name": "Aria Vega",
    "genre": "urbano",
    "lo": 5,
-   "hi": 10
+   "hi": 10,
+   "photo": "img/artistas/aria-vega.webp",
+   "photoSize": [
+    475,
+    657
+   ],
+   "credit": {
+    "author": "LA TOBÓN SHOW",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aria_Vega_en_2026.png"
+   }
   },
   {
    "name": "Lil Silvio y El Vega",
@@ -503,7 +954,18 @@
    "name": "Lalo Ebratt",
    "genre": "urbano",
    "lo": 5,
-   "hi": 10
+   "hi": 10,
+   "photo": "img/artistas/lalo-ebratt.webp",
+   "photoSize": [
+    667,
+    1000
+   ],
+   "credit": {
+    "author": "Daniella Zhang",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Lalo_Ebratt.jpg"
+   }
   },
   {
    "name": "El Americano 4KT",
@@ -587,13 +1049,35 @@
    "name": "Ivy Queen",
    "genre": "urbano",
    "lo": null,
-   "hi": null
+   "hi": null,
+   "photo": "img/artistas/ivy-queen.webp",
+   "photoSize": [
+    658,
+    1000
+   ],
+   "credit": {
+    "author": "Lunchbox LP from Culver City, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ivy_Queen.jpg"
+   }
   },
   {
    "name": "Mike Bahía",
    "genre": "urbano",
    "lo": null,
-   "hi": null
+   "hi": null,
+   "photo": "img/artistas/mike-bahia.webp",
+   "photoSize": [
+    580,
+    733
+   ],
+   "credit": {
+    "author": "Maritza Ariza Periodista",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mike_Bah%C3%ADa_en_Premios_Nuestra_Tierra_2022.jpg"
+   }
   },
   {
    "name": "Juanka",
@@ -629,7 +1113,18 @@
    "name": "Jessi Uribe",
    "genre": "popular",
    "lo": 45,
-   "hi": 65
+   "hi": 65,
+   "photo": "img/artistas/jessi-uribe.webp",
+   "photoSize": [
+    720,
+    900
+   ],
+   "credit": {
+    "author": "EdwinJaimesSoto",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jessi_Uribe,_cantautor_de_m%C3%BAsica_popular_Colombiana.jpg"
+   }
   },
   {
    "name": "Jhon Alex Castaño",
@@ -659,7 +1154,18 @@
    "name": "Paola Jara",
    "genre": "popular",
    "lo": 15,
-   "hi": 25
+   "hi": 25,
+   "photo": "img/artistas/paola-jara.webp",
+   "photoSize": [
+    689,
+    1000
+   ],
+   "credit": {
+    "author": "Edwin Jaimes Soto",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Paola_Jara_by_Edwin_Jaimes_(cropped).jpg"
+   }
   },
   {
    "name": "Hernán Gómez",
@@ -677,7 +1183,18 @@
    "name": "Natanael Cano",
    "genre": "regional",
    "lo": 250,
-   "hi": 500
+   "hi": 500,
+   "photo": "img/artistas/natanael-cano.webp",
+   "photoSize": [
+    371,
+    450
+   ],
+   "credit": {
+    "author": "https://www.youtube.com/channel/UCoHq_YXYcZGObsCqvymQpEA (EL BARBAS PRODUCTION)",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cano6_(cropped).jpg"
+   }
   },
   {
    "name": "Grupo Frontera",
@@ -689,37 +1206,89 @@
    "name": "Fuerza Regida",
    "genre": "regional",
    "lo": null,
-   "hi": null
+   "hi": null,
+   "photoSize": [
+    720,
+    455
+   ]
   },
   {
    "name": "Junior H",
    "genre": "regional",
    "lo": null,
-   "hi": null
+   "hi": null,
+   "photo": "img/artistas/junior-h.webp",
+   "photoSize": [
+    720,
+    900
+   ],
+   "credit": {
+    "author": "SessionLive",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Junior_H_@_El_Domo_Care_-_Monterrey,_2022.png"
+   }
   },
   {
    "name": "Silvestre Dangond",
    "genre": "vallenato",
    "lo": 250,
-   "hi": 350
+   "hi": 350,
+   "photo": "img/artistas/silvestre-dangond.webp",
+   "photoSize": [
+    720,
+    960
+   ],
+   "credit": {
+    "author": "SilvestreDangondOficial",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Silvestre_Dangond_(cropped).jpg"
+   }
   },
   {
    "name": "Jorge Celedón",
    "genre": "vallenato",
    "lo": 30,
-   "hi": 60
+   "hi": 60,
+   "photo": "img/artistas/jorge-celedon.webp",
+   "photoSize": [
+    720,
+    671
+   ],
+   "credit": {
+    "author": "Miguel J Torres Barrios, i.e., me.",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jorge_Celed%C3%B3n_in_DC.JPG"
+   }
   },
   {
    "name": "Felipe Peláez",
    "genre": "vallenato",
    "lo": 30,
-   "hi": 60
+   "hi": 60,
+   "photo": "img/artistas/felipe-pelaez.webp",
+   "photoSize": [
+    720,
+    808
+   ],
+   "credit": {
+    "author": "National Police of Colombia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Felipe_Pel%C3%A1ez_(cropped).jpg"
+   }
   },
   {
    "name": "Jean Carlos Centeno",
    "genre": "vallenato",
    "lo": 30,
-   "hi": 60
+   "hi": 60,
+   "photoSize": [
+    369,
+    429
+   ]
   },
   {
    "name": "Nelson Velásquez",
@@ -731,7 +1300,18 @@
    "name": "Hebert Vargas",
    "genre": "vallenato",
    "lo": 20,
-   "hi": 30
+   "hi": 30,
+   "photo": "img/artistas/hebert-vargas.webp",
+   "photoSize": [
+    719,
+    779
+   ],
+   "credit": {
+    "author": "RicardoChavesWiki",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hebert_Vargas.png"
+   }
   },
   {
    "name": "Elder Dayán",
@@ -743,13 +1323,28 @@
    "name": "Guayacán Orquesta",
    "genre": "salsa",
    "lo": 60,
-   "hi": 120
+   "hi": 120,
+   "photoSize": [
+    720,
+    479
+   ]
   },
   {
    "name": "Grupo Niche",
    "genre": "salsa",
    "lo": 60,
-   "hi": 120
+   "hi": 120,
+   "photo": "img/artistas/grupo-niche.webp",
+   "photoSize": [
+    720,
+    720
+   ],
+   "credit": {
+    "author": "Matei Hernandez",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:GN_foto_plataformas.png"
+   }
   },
   {
    "name": "Jerry Rivera",
