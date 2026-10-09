@@ -7,6 +7,8 @@ Sitio estático (HTML + CSS + JS sin dependencias de runtime), publicado en GitH
 - `src/index.html` — plantilla de la página.
 - `scripts/build.mjs` — genera `index.html` (roster ya renderizado, visible sin JS).
 - `css/styles.css`, `js/main.js`, `fonts/` (autoalojadas), `img/`.
+- `img/sancor-logo.svg` — logo vectorizado (animable). Generado con `scripts/vectorize-logo.py` a partir del raster original `logo.webp` (commit `eac0d3b`); no existe SVG/PDF original en el repo.
+- `img/artistas/` + campos `photo`/`credit` de `data/roster.json` — fotos de Wikimedia Commons con licencia libre. Búsqueda: `scripts/find-photos.mjs`, `scripts/find-photos2.mjs`; descarga y registro: `scripts/fetch-photos.py` (con lista de exclusiones revisadas a mano).
 
 ## Editar y publicar
 ```

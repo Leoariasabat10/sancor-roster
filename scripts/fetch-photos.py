@@ -26,11 +26,16 @@ def get(url):
     raise RuntimeError(url)
 
 cands = json.load(open(sys.argv[1], encoding='utf8'))
+# 2ª pasada (Wikidata/categorías): solo se aceptan los nombres revisados a mano; el resto eran falsos positivos
+cands2 = json.load(open(sys.argv[2], encoding='utf8')) if len(sys.argv) > 2 else {}
+ALLOW2 = set()  # revisados a mano: ninguno de la 2ª pasada fue verificable
 roster = json.load(open('data/roster.json', encoding='utf8'))
 out = Path('img/artistas'); out.mkdir(parents=True, exist_ok=True)
 n = 0
 for a in roster['artists']:
     c = cands.get(a['name'])
+    if (not c or not c.get('ok')) and a['name'] in ALLOW2:
+        c = cands2.get(a['name'])
     if not c or not c.get('ok') or a['name'] in EXCLUDE or (c['w'] < 300 and c['h'] < 300):
         a.pop('photo', None); a.pop('credit', None); continue
     f = out / f"{slug(a['name'])}.webp"

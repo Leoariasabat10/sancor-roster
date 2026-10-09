@@ -995,7 +995,11 @@
    "name": "Pipe Calderón",
    "genre": "urbano",
    "lo": 5,
-   "hi": 10
+   "hi": 10,
+   "photoSize": [
+    720,
+    540
+   ]
   },
   {
    "name": "Tury",
@@ -1380,7 +1384,11 @@
    "name": "Natalia París",
    "genre": "djs",
    "lo": 3,
-   "hi": 12
+   "hi": 12,
+   "photoSize": [
+    609,
+    1000
+   ]
   },
   {
    "name": "Marcela Reyes",

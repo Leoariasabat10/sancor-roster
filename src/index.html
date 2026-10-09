@@ -20,7 +20,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/logo-light.webp" as="image" fetchpriority="high">
 <link rel="stylesheet" href="css/styles.css">
 <script>document.documentElement.classList.add('js');</script>
 <script src="js/main.js" defer></script>
@@ -30,7 +29,7 @@
 <div class="progress" aria-hidden="true"></div>
 
 <header class="site-header" id="top">
-  <a class="brand" href="#top" aria-label="SANCOR MGMT, inicio"><img src="img/logo-light.webp" alt="SANCOR MGMT" width="832" height="390"></a>
+  <a class="brand" href="#top" aria-label="SANCOR MGMT, inicio"><img src="img/sancor-logo.svg" alt="" width="832" height="390"></a>
   <nav class="nav" id="nav" aria-label="Principal">
     <a href="#cotizar">Cómo cotizamos</a>
     <a href="#elite">Elite</a>
@@ -43,25 +42,31 @@
 
 <main>
 <section class="hero" aria-labelledby="hero-title">
-  <img class="hero-logo" src="img/logo-light.webp" alt="" width="832" height="390" fetchpriority="high">
-  <h1 id="hero-title" class="hero-title">
-    <span class="mask"><span>Artistas.</span></span>
-    <span class="mask"><span>Escenarios.</span></span>
-    <span class="mask"><span>Acuerdos.</span></span>
-  </h1>
-  <div class="hero-foot">
-    <p class="hero-lede">Booking y management internacional de artistas urbanos y latinos. Un solo contacto para cotizar, negociar y cerrar cada show.</p>
-    <dl class="hero-stats">
-      <div><dt>Artistas</dt><dd>{{COUNT}}</dd></div>
-      <div><dt>Géneros</dt><dd>{{GENRES}}</dd></div>
-      <div><dt>Países</dt><dd>15+</dd></div>
-    </dl>
-    <div class="hero-cta">
-      <a class="btn btn-solid" href="#roster">Ver el roster</a>
-      <a class="btn btn-line" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20roster%20de%20artistas" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+  <div class="hero-copy">
+    <div class="hero-sign">{{LOGO}}</div>
+    <div class="hero-main">
+      <h1 id="hero-title" class="hero-title">
+        <span class="mask"><span>Artistas.</span></span>
+        <span class="mask"><span>Escenarios.</span></span>
+        <span class="mask"><span>Acuerdos.</span></span>
+      </h1>
+      <div class="hero-foot">
+        <p class="hero-lede">Booking y management internacional de artistas urbanos y latinos. Un solo contacto para cotizar, negociar y cerrar cada show.</p>
+        <dl class="hero-stats">
+          <div><dt>Artistas</dt><dd>{{COUNT}}</dd></div>
+          <div><dt>Géneros</dt><dd>{{GENRES}}</dd></div>
+          <div><dt>Países</dt><dd>15+</dd></div>
+        </dl>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#roster">Ver el roster</a>
+          <a class="btn btn-line" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20roster%20de%20artistas" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+        </div>
+      </div>
     </div>
   </div>
-  <a class="scroll-cue" href="#cotizar" aria-label="Bajar al contenido"><span></span></a>
+  <ul class="hero-collage" aria-label="Artistas del roster">
+<!--HERO-->
+  </ul>
 </section>
 
 <section class="faces" aria-label="Retratos del roster">
@@ -163,7 +168,7 @@
 </main>
 
 <footer class="footer">
-  <img src="img/logo-light.webp" alt="SANCOR MGMT" width="832" height="390" loading="lazy">
+  <img src="img/sancor-logo.svg" alt="SANCOR MGMT" width="832" height="390" loading="lazy">
   <p>Precios referenciales en USD. Sujetos a disponibilidad, fecha y ciudad. No incluyen logística salvo que se indique.</p>
   <details class="credits">
     <summary>Créditos de fotografía</summary>

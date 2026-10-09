@@ -35,6 +35,15 @@ const eliteHtml = elite.map((a, i) => `
         <span class="poster-name">${esc(a.name)}</span>
         <span class="poster-meta"><span>${GENRES[a.genre]}</span><span>${range(a)}</span></span>`, ` data-reveal style="--i:${i % 5}"`)}</li>`).join('');
 
+// ---- Collage del hero: 3 columnas de retratos verticales ----
+const byName = (n) => artists.find((a) => a.name === n);
+const HERO_COLS = [['Arcangel', 'Myke Towers', 'Nicky Jam'], ['Rauw Alejandro', 'Camilo', 'Ozuna'], ['Silvestre Dangond', 'Natanael Cano', 'Ryan Castro']];
+let n = 0;
+const heroHtml = HERO_COLS.map((col, c) => `
+    <li class="hcol" style="--c:${c}"><ul>${col.map((nm) => { const a = byName(nm); return `
+      <li>${link(a, 'shot', img(a, 'shot-img', '(min-width:900px) 16vw, 30vw', false), ` style="--n:${n++}"`)}</li>`; }).join('')}
+    </ul></li>`).join('');
+
 // ---- Tira de retratos (solo fotos de una persona, mayor tarifa primero) ----
 const SOLO = (a) => a.photo && !/ y | & |Piso 21|Cali|Trébol|Zion|Alexis/.test(a.name);
 const faces = artists.filter(SOLO).sort((a, b) => (b.hi ?? 0) - (a.hi ?? 0)).slice(0, 14);
@@ -76,6 +85,8 @@ const out = tpl
   .replaceAll('{{COUNT}}', artists.length)
   .replaceAll('{{GENRES}}', genreCount)
   .replaceAll('{{PHOTOS}}', artists.filter((a) => a.photo).length)
+  .replace('{{LOGO}}', readFileSync('img/sancor-logo.svg', 'utf8'))
+  .replace('<!--HERO-->', heroHtml.replace('class="shot-img"', 'class="shot-img" fetchpriority="high"'))
   .replace('<!--FACES-->', facesHtml)
   .replace('<!--ELITE-->', eliteHtml)
   .replace('<!--INDEX-->', index)
