@@ -151,14 +151,14 @@ main>section{padding:var(--section) var(--g)}
 .search input:focus{border-color:var(--accent)}
 .search input::placeholder{color:#6a6a6a}
 .filters{margin-top:.9rem;display:grid;grid-template-columns:minmax(0,1fr);gap:.5rem;align-items:start}
-.pill-group{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;margin-inline:calc(var(--g) * -1);padding:.15rem var(--g)}
+.pill-group{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;margin-inline:calc(var(--g) * -1);padding:.15rem var(--g)}
 .pill-group::-webkit-scrollbar{display:none}
-.pill{flex:none;min-height:2.5rem;padding:.35rem 1rem;border:1px solid var(--line);border-radius:99px;font-size:.88rem;color:#cfcbc3;transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
+.pill{flex:none;min-height:2.75rem;padding:.35rem 1rem;border:1px solid var(--line);border-radius:99px;font-size:.88rem;color:#cfcbc3;transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
 .pill:hover{border-color:var(--bone)}
 .pill[aria-pressed=true]{background:var(--bone);color:var(--black);border-color:var(--bone)}
 .toolbar-foot{display:flex;justify-content:space-between;align-items:center;margin-top:.5rem;font-size:.85rem;color:var(--steel)}
 .count b{color:var(--bone);font-variant-numeric:tabular-nums}
-.reset{min-height:2.5rem;color:var(--bone);text-decoration:underline;text-underline-offset:.25em}
+.reset{min-height:2.75rem;padding:0 .25rem;color:var(--bone);text-decoration:underline;text-underline-offset:.25em}
 .reset[hidden],.empty[hidden],[hidden]{display:none!important}
 @media(min-width:900px){
   .toolbar{position:sticky;top:var(--header-h);margin-inline:calc(var(--g) * -1);padding-inline:var(--g)}
@@ -197,7 +197,7 @@ main>section{padding:var(--section) var(--g)}
 @media(min-width:900px){.contact-grid{grid-template-columns:1fr 1fr;gap:5rem}}
 
 /* ---------- Footer ---------- */
-.footer{padding:4rem var(--g) calc(2.5rem + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:grid;gap:.6rem;font-size:.8rem;color:var(--steel)}
+.footer{padding:4rem var(--g) calc(2.5rem + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:grid;gap:.6rem;font-size:.875rem;color:var(--steel)}
 .footer img{width:min(24rem,70vw);margin:0 0 1.5rem -1rem;opacity:.85}
 .footer p{max-width:60ch}
 
