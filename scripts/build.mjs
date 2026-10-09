@@ -67,7 +67,7 @@ for (const g of Object.keys(GENRES)) {
     index += `\n      <div class="tier"><h4 class="tier-name">${tierLabel(t[0])}</h4><ul class="artist-list">`;
     for (const a of t) {
       index += `\n        <li data-genre="${g}" data-band="${band(a.lo)}" data-name="${esc(norm(a.name))}">${link(a, 'artist',
-        `<span class="thumb">${img(a, 'thumb-img')}</span><span class="artist-name">${esc(a.name)}</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — ver ficha y cotizar</span>`)}</li>`;
+        `<span class="thumb">${img(a, 'thumb-img')}</span><span class="artist-name">${esc(a.name)}</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only">, ver ficha y cotizar</span>`)}</li>`;
     }
     index += '\n      </ul></div>';
   }
@@ -78,7 +78,7 @@ for (const g of Object.keys(GENRES)) {
 const data = artists.map((a) => ({ n: a.name, g: GENRES[a.genre], r: range(a), p: a.photo ?? null, c: a.credit ?? null, q: quote(a) }));
 const json = JSON.stringify(data).replace(/</g, '\\u003c');
 const credits = artists.filter((a) => a.credit).map((a) =>
-  `<li><span>${esc(a.name)}</span> <a href="${esc(a.credit.source)}" target="_blank" rel="noopener noreferrer">${esc(a.credit.author || 'Autor en Commons')}</a>, ${a.credit.licenseUrl ? `<a href="${esc(a.credit.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(a.credit.license)}</a>` : esc(a.credit.license)}</li>`).join('\n        ');
+  `<li><span>${esc(a.name)}</span> ${a.credit.source ? `<a href="${esc(a.credit.source)}" target="_blank" rel="noopener noreferrer">${esc(a.credit.author || 'Autor en Commons')}</a>` : esc(a.credit.author)}, ${a.credit.licenseUrl ? `<a href="${esc(a.credit.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(a.credit.license)}</a>` : esc(a.credit.license)}</li>`).join('\n        ');
 
 const genreCount = new Set(artists.map((a) => a.genre)).size;
 const out = tpl

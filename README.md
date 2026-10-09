@@ -20,3 +20,9 @@ No edites `index.html` a mano: se sobrescribe. Para añadir una foto oficial: `"
 
 ## Pendientes de decisión
 - `robots: noindex` se mantiene (decisión original). Para indexar, quitar la meta en `src/index.html`.
+
+## Fotos pendientes
+Ver `data/fotos-pendientes.md` (nombre de archivo exacto por artista). Copia las fotos a `img/artistas-drop/`, ejecuta `python scripts/add-photos.py --credit "Foto: cortesía de ..."` y luego `node scripts/build.mjs`.
+
+## Pruebas
+`index.html` es el resultado de `node scripts/build.mjs`. Verificado con Playwright (Chrome), axe-core y Lighthouse (ver informe de la entrega).

@@ -70,13 +70,20 @@
 </section>
 
 <section class="faces" aria-label="Retratos del roster">
-  <ul class="faces-track">
+  <div class="gallery" id="gallery">
+    <div class="gallery-viewport" id="galleryViewport" tabindex="0" role="group" aria-roledescription="carrusel" aria-label="Retratos del roster. Desplázate con las flechas del teclado.">
+      <ul class="faces-track">
 <!--FACES-->
-  </ul>
+      </ul>
+    </div>
+    <button class="gal-btn gal-prev" type="button" aria-label="Retratos anteriores" aria-controls="galleryViewport" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="gal-btn gal-next" type="button" aria-label="Más retratos" aria-controls="galleryViewport" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <div class="gal-progress" aria-hidden="true"><span></span></div>
+  </div>
 </section>
 
 <section class="how" id="cotizar" aria-labelledby="how-title">
-  <h2 id="how-title" class="serif-statement" data-reveal>Cada show se negocia caso a caso.</h2>
+  <h2 id="how-title" class="serif-statement reveal-mask"><span class="mask"><span>Cada show se</span></span> <span class="mask"><span>negocia caso a caso.</span></span></h2>
   <div class="how-body" data-reveal>
     <p>Los rangos del roster son referenciales y se mueven dentro de márgenes estándar del mercado. La tarifa final se define con cada promotor, buscando el mejor acuerdo posible para ambas partes.</p>
     <p class="how-lead">La tarifa final depende de:</p>
@@ -92,7 +99,7 @@
 
 <section class="elite" id="elite" aria-labelledby="elite-title">
   <header class="section-head">
-    <h2 id="elite-title" class="display" data-reveal>Elite</h2>
+    <h2 id="elite-title" class="display reveal-mask"><span class="mask"><span>Elite</span></span></h2>
     <p class="section-note" data-reveal>Artistas con tarifa desde $200K USD. Toca un nombre para cotizar.</p>
   </header>
   <ul class="poster-grid">
@@ -101,9 +108,8 @@
 </section>
 
 <section class="pack" id="paquete" aria-labelledby="pack-title">
-  <p class="pack-kicker" data-reveal>Paquete especial</p>
-  <h2 id="pack-title" class="display pack-title" data-reveal>Los Extraditables</h2>
-  <p class="pack-lineup" data-reveal>Carabine, Tury, Geezy y Fatty. Cuatro artistas, un solo show.</p>
+  <h2 id="pack-title" class="display pack-title reveal-mask"><span class="mask"><span>Los</span></span> <span class="mask"><span>Extraditables</span></span></h2>
+  <p class="pack-lineup" data-reveal>Paquete de cuatro artistas para un solo show: Carabine, Tury, Geezy y Fatty.</p>
   <div class="pack-cta" data-reveal>
     <span class="pack-price">$10,000 USD</span>
     <a class="btn btn-solid" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20el%20paquete%20Los%20Extraditables" target="_blank" rel="noopener noreferrer">Cotizar el paquete</a>
@@ -112,7 +118,7 @@
 
 <section class="roster" id="roster" aria-labelledby="roster-title">
   <header class="section-head">
-    <h2 id="roster-title" class="display" data-reveal>Roster completo</h2>
+    <h2 id="roster-title" class="display reveal-mask"><span class="mask"><span>Roster completo</span></span></h2>
   </header>
 
   <div class="toolbar" id="toolbar" role="search">
@@ -155,13 +161,14 @@
 </section>
 
 <section class="contact" id="contacto" aria-labelledby="contact-title">
-  <h2 id="contact-title" class="contact-title" data-reveal>Hablemos de tu próximo show.</h2>
+  <h2 id="contact-title" class="contact-title reveal-mask"><span class="mask"><span>Hablemos</span></span> <span class="mask"><span>de tu próximo</span></span> <span class="mask"><span>show.</span></span></h2>
   <div class="contact-grid" data-reveal>
     <a class="btn btn-solid btn-xl" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20roster%20de%20artistas" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
     <ul class="contact-list">
       <li><span>Correo</span><a href="mailto:sancor.mgmt@gmail.com">sancor.mgmt@gmail.com</a></li>
       <li><span>Teléfono</span><a href="tel:+573178850263">+57 317 885 0263</a></li>
-      <li><span>Instagram</span><a href="https://instagram.com/s.ancort" target="_blank" rel="noopener noreferrer">@s.ancort</a></li>
+      <li><span>Instagram</span><a href="https://www.instagram.com/sancor.mgmt/" target="_blank" rel="noopener noreferrer">@sancor.mgmt</a></li>
+      <li><span>Ha trabajado con</span><b>Ñejo, TopBoy, Kris R, Carabine, Maisak, Pirlo</b></li>
     </ul>
   </div>
 </section>

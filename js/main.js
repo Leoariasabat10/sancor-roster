@@ -16,7 +16,7 @@
   matchMedia('(min-width:900px)').addEventListener('change', (e) => e.matches && setMenu(false));
 
   // ---- Reveal al entrar en viewport (una vez) ----
-  const reveals = $$('[data-reveal]');
+  const reveals = $$('[data-reveal], .reveal-mask');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => entries.forEach((e) => {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
@@ -79,6 +79,62 @@
     search.focus();
   });
 
+
+  // ---- Cabecera: fondo al salir del tope (un solo listener pasivo) ----
+  const header = $('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', scrollY > 24);
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ---- Galería de retratos: scroll nativo sin barra; arrastre con ratón, botones, teclado y progreso ----
+  const vp = $('#galleryViewport');
+  if (vp) {
+    const [prev, next] = [$('.gal-prev'), $('.gal-next')];
+    const bar = $('.gal-progress span');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    let ticking = false;
+
+    function update() {
+      ticking = false;
+      const max = vp.scrollWidth - vp.clientWidth;
+      const atStart = vp.scrollLeft < 4, atEnd = vp.scrollLeft > max - 4;
+      vp.classList.toggle('m-both', !atStart && !atEnd);
+      vp.classList.toggle('m-start', atEnd && !atStart);
+      prev.disabled = atStart; next.disabled = atEnd;
+      bar.style.transform = `scaleX(${max > 0 ? Math.min(1, (vp.scrollLeft + vp.clientWidth) / vp.scrollWidth) : 1})`;
+    }
+    const queue = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+    vp.addEventListener('scroll', queue, { passive: true });
+    addEventListener('resize', queue);
+    prev.hidden = next.hidden = false;
+    update();
+
+    const step = (dir) => vp.scrollBy({ left: dir * vp.clientWidth * 0.8, behavior: reduced.matches ? 'auto' : 'smooth' });
+    prev.addEventListener('click', () => step(-1));
+    next.addEventListener('click', () => step(1));
+    vp.addEventListener('keydown', (e) => {
+      if (e.target !== vp) return; // las flechas de un enlace enfocado siguen siendo del navegador
+      if (e.key === 'ArrowRight') { e.preventDefault(); step(0.5); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); step(-0.5); }
+    });
+
+    // Arrastre con ratón (táctil y trackpad usan el scroll nativo)
+    let down = null, moved = false;
+    vp.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'mouse' || e.button) return;
+      down = { x: e.clientX, left: vp.scrollLeft }; moved = false;
+    });
+    addEventListener('pointermove', (e) => {
+      if (!down) return;
+      const dx = e.clientX - down.x;
+      if (!moved && Math.abs(dx) > 5) { moved = true; vp.classList.add('dragging'); }
+      if (moved) vp.scrollLeft = down.left - dx;
+    });
+    addEventListener('pointerup', () => { down = null; vp.classList.remove('dragging'); });
+    vp.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+    vp.addEventListener('dragstart', (e) => e.preventDefault());
+  }
+
   // ---- Ficha del artista (progresivo: sin JS, los enlaces van directo a WhatsApp) ----
   const dlg = $('#profile');
   const data = JSON.parse($('#roster-data').textContent);
@@ -96,7 +152,7 @@
     media.replaceChildren(a.p ? el('img', { src: a.p, alt: `Retrato de ${a.n}` }) : el('span', { className: 'mono', ariaHidden: 'true' }, mono(a.n)));
     const cr = $('#pf-credit');
     cr.replaceChildren();
-    if (a.c) cr.append('Foto: ', link(a.c.source, a.c.author || 'Wikimedia Commons'), ', ', a.c.licenseUrl ? link(a.c.licenseUrl, a.c.license) : a.c.license);
+    if (a.c) cr.append(a.c.source ? 'Foto: ' : '', a.c.source ? link(a.c.source, a.c.author || 'Wikimedia Commons') : a.c.author, ', ', a.c.licenseUrl ? link(a.c.licenseUrl, a.c.license) : a.c.license);
     dlg.showModal();
   }
   document.addEventListener('click', (e) => {
