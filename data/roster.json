@@ -663,7 +663,18 @@
    "name": "Westcol",
    "genre": "urbano",
    "lo": 30,
-   "hi": 55
+   "hi": 55,
+   "photo": "img/artistas/westcol.webp",
+   "photoSize": [
+    624,
+    610
+   ],
+   "credit": {
+    "author": "PelucheEn ElEstuche",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Westcol2023.png"
+   }
   },
   {
    "name": "Pirlo",
@@ -1354,7 +1365,18 @@
    "name": "Jerry Rivera",
    "genre": "salsa",
    "lo": 60,
-   "hi": 120
+   "hi": 120,
+   "photo": "img/artistas/jerry-rivera.webp",
+   "photoSize": [
+    720,
+    587
+   ],
+   "credit": {
+    "author": "Radio Tiempo Colombia",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jerry_rivera_2016.png"
+   }
   },
   {
    "name": "Adolescentes Orquesta",
@@ -1386,9 +1408,16 @@
    "lo": 3,
    "hi": 12,
    "photoSize": [
-    609,
-    1000
-   ]
+    720,
+    537
+   ],
+   "photo": "img/artistas/natalia-paris.webp",
+   "credit": {
+    "author": "Inspira Company Agencia Creativa",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Natalia_Par%C3%ADs_2013.png"
+   }
   },
   {
    "name": "Marcela Reyes",

@@ -28,15 +28,22 @@ def get(url):
 cands = json.load(open(sys.argv[1], encoding='utf8'))
 # 2ª pasada (Wikidata/categorías): solo se aceptan los nombres revisados a mano; el resto eran falsos positivos
 cands2 = json.load(open(sys.argv[2], encoding='utf8')) if len(sys.argv) > 2 else {}
+# 3ª pasada (find-photos3.mjs): candidatos revisados a mano en hoja de contactos -> {artista: índice en review3.json}
+rev3 = json.load(open(sys.argv[3], encoding='utf8')) if len(sys.argv) > 3 else []
+ALLOW3 = {'Westcol': 6, 'Jerry Rivera': 11, 'Natalia París': 19}
 ALLOW2 = set()  # revisados a mano: ninguno de la 2ª pasada fue verificable
 roster = json.load(open('data/roster.json', encoding='utf8'))
 out = Path('img/artistas'); out.mkdir(parents=True, exist_ok=True)
 n = 0
 for a in roster['artists']:
     c = cands.get(a['name'])
+    if a['name'] in ALLOW3 and rev3:
+        c = {**rev3[ALLOW3[a['name']]], 'ok': True}
+        c['url'] = c.get('url')
+        a.pop('photo', None)
     if (not c or not c.get('ok')) and a['name'] in ALLOW2:
         c = cands2.get(a['name'])
-    if not c or not c.get('ok') or a['name'] in EXCLUDE or (c['w'] < 300 and c['h'] < 300):
+    if not c or not c.get('ok') or (a['name'] in EXCLUDE and a['name'] not in ALLOW3) or (c['w'] < 300 and c['h'] < 300):
         a.pop('photo', None); a.pop('credit', None); continue
     f = out / f"{slug(a['name'])}.webp"
     if not f.exists():

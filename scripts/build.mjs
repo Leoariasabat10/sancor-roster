@@ -41,14 +41,14 @@ const HERO_COLS = [['Arcangel', 'Myke Towers', 'Nicky Jam'], ['Rauw Alejandro', 
 let n = 0;
 const heroHtml = HERO_COLS.map((col, c) => `
     <li class="hcol" style="--c:${c}"><ul>${col.map((nm) => { const a = byName(nm); return `
-      <li>${link(a, 'shot', img(a, 'shot-img', '(min-width:900px) 16vw, 30vw', false), ` style="--n:${n++}"`)}</li>`; }).join('')}
+      <li>${link(a, 'shot', img(a, 'shot-img', '(min-width:900px) 16vw, 30vw', col.indexOf(nm) !== 0), ` style="--n:${n++}"`)}</li>`; }).join('')}
     </ul></li>`).join('');
 
 // ---- Tira de retratos (solo fotos de una persona, mayor tarifa primero) ----
 const SOLO = (a) => a.photo && !/ y | & |Piso 21|Cali|Trébol|Zion|Alexis/.test(a.name);
 const faces = artists.filter(SOLO).sort((a, b) => (b.hi ?? 0) - (a.hi ?? 0)).slice(0, 14);
-const facesHtml = faces.map((a) => `
-      <li>${link(a, 'face', `<span class="face-media">${img(a, 'face-img', '', false)}</span><span class="face-name">${esc(a.name)}</span>`)}</li>`).join('');
+const facesHtml = faces.map((a, i) => `
+      <li>${link(a, 'face', `<span class="face-media">${img(a, 'face-img', '', i < 4 ? false : true)}</span><span class="face-name">${esc(a.name)}</span>`, ` style="--i:${Math.min(i, 7)}"`)}</li>`).join('');
 
 // ---- Índice completo, agrupado por género y rango ----
 let index = '';

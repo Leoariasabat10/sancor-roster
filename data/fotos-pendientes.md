@@ -1,9 +1,11 @@
 # Fotos pendientes
 
-53 de 134 artistas tienen foto verificada. Faltan **81**.
+56 de 134 artistas tienen foto verificada. Faltan **78**.
 
 Para cada uno: una foto de prensa o propia, **vertical (retrato)**, mínimo 800 px de alto, con permiso del artista o de SANCOR.
 Guárdala en `img/artistas-drop/` con el nombre indicado y ejecuta `python scripts/add-photos.py` y `node scripts/build.mjs`.
+
+Búsquedas ya realizadas sin resultado válido: Wikipedia (imagen principal), Wikidata (P18), Commons (categorías y texto completo) y Openverse. Los resultados descartados eran homónimos, escenarios sin rostro visible, carátulas con texto o imágenes sin identidad verificable.
 
 | Artista | Género | Nombre de archivo |
 |---|---|---|
@@ -26,7 +28,6 @@ Guárdala en `img/artistas-drop/` con el nombre indicado y ejecuta `python scrip
 | Chimbala | Urbano | `chimbala.jpg` |
 | Alleh y Yorghaki | Urbano | `alleh-y-yorghaki.jpg` |
 | Big Soto | Urbano | `big-soto.jpg` |
-| Westcol | Urbano | `westcol.jpg` |
 | Pirlo | Urbano | `pirlo.jpg` |
 | Kris R | Urbano | `kris-r.jpg` |
 | Miky Woodz | Urbano | `miky-woodz.jpg` |
@@ -79,12 +80,10 @@ Guárdala en `img/artistas-drop/` con el nombre indicado y ejecuta `python scrip
 | Nelson Velásquez | Vallenato | `nelson-velasquez.jpg` |
 | Elder Dayán | Vallenato | `elder-dayan.jpg` |
 | Guayacán Orquesta | Salsa | `guayacan-orquesta.jpg` |
-| Jerry Rivera | Salsa | `jerry-rivera.jpg` |
 | Adolescentes Orquesta | Salsa | `adolescentes-orquesta.jpg` |
 | Maelo Ruiz | Salsa | `maelo-ruiz.jpg` |
 | Gabino Pampini | Salsa | `gabino-pampini.jpg` |
 | Kybba | DJ's | `kybba.jpg` |
-| Natalia París | DJ's | `natalia-paris.jpg` |
 | Marcela Reyes | DJ's | `marcela-reyes.jpg` |
 | Manguito DJ | DJ's | `manguito-dj.jpg` |
 | Fumaratto | DJ's | `fumaratto.jpg` |

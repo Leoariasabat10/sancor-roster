@@ -16,7 +16,7 @@
   matchMedia('(min-width:900px)').addEventListener('change', (e) => e.matches && setMenu(false));
 
   // ---- Reveal al entrar en viewport (una vez) ----
-  const reveals = $$('[data-reveal], .reveal-mask');
+  const reveals = $$('[data-reveal], .reveal-mask, .gallery');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => entries.forEach((e) => {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
@@ -79,6 +79,26 @@
     search.focus();
   });
 
+
+  // ---- Sección activa en la navegación ----
+  const links = $$('#nav a[href^="#"]:not(.btn)');
+  if ('IntersectionObserver' in window && links.length) {
+    const spy = new IntersectionObserver((es) => es.forEach((e) => {
+      if (!e.isIntersecting) return;
+      links.forEach((l) => (l.getAttribute('href') === '#' + e.target.id ? l.setAttribute('aria-current', 'true') : l.removeAttribute('aria-current')));
+    }), { rootMargin: '-45% 0px -50% 0px' });
+    links.forEach((l) => { const t = $(l.getAttribute('href')); if (t) spy.observe(t); });
+  }
+
+  // ---- Táctil: el retrato recupera el color al pasar por el centro (no hay hover) ----
+  if ('IntersectionObserver' in window && matchMedia('(hover: none)').matches) {
+    const lit = (root, margin, sel) => {
+      const io = new IntersectionObserver((es) => es.forEach((e) => e.target.classList.toggle('is-lit', e.isIntersecting)), { root, rootMargin: margin });
+      $$(sel).forEach((el) => io.observe(el));
+    };
+    lit(null, '-38% 0px -38% 0px', '.poster');
+    lit($('#galleryViewport'), '0px -36% 0px -36%', '.face');
+  }
 
   // ---- Cabecera: fondo al salir del tope (un solo listener pasivo) ----
   const header = $('.site-header');
