@@ -1,0 +1,809 @@
+{
+ "whatsapp": "573178850263",
+ "artists": [
+  {
+   "name": "Arcangel",
+   "genre": "urbano",
+   "lo": 250,
+   "hi": 500
+  },
+  {
+   "name": "Beele",
+   "genre": "urbano",
+   "lo": 250,
+   "hi": 500
+  },
+  {
+   "name": "Rauw Alejandro",
+   "genre": "urbano",
+   "lo": 250,
+   "hi": 500
+  },
+  {
+   "name": "Nicky Jam",
+   "genre": "urbano",
+   "lo": 200,
+   "hi": 300
+  },
+  {
+   "name": "Ozuna",
+   "genre": "urbano",
+   "lo": 200,
+   "hi": 300
+  },
+  {
+   "name": "Myke Towers",
+   "genre": "urbano",
+   "lo": 200,
+   "hi": 300
+  },
+  {
+   "name": "Ryan Castro",
+   "genre": "urbano",
+   "lo": 200,
+   "hi": 300
+  },
+  {
+   "name": "Camilo",
+   "genre": "urbano",
+   "lo": 200,
+   "hi": 300
+  },
+  {
+   "name": "Chencho Corleone",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Blessd",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Anuel",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Farruko",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Kapo",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Sebastián Yatra",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Manuel Turizo",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Yandel",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Jhayco",
+   "genre": "urbano",
+   "lo": 150,
+   "hi": 250
+  },
+  {
+   "name": "Justin Quiles",
+   "genre": "urbano",
+   "lo": 100,
+   "hi": 150
+  },
+  {
+   "name": "Young Miko",
+   "genre": "urbano",
+   "lo": 100,
+   "hi": 150
+  },
+  {
+   "name": "Eladio Carrión",
+   "genre": "urbano",
+   "lo": 100,
+   "hi": 150
+  },
+  {
+   "name": "Lenny Tavárez",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "De La Ghetto",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Jowell y Randy",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Zion",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Ñengo Flow",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Hades",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Luar La L",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Cosculluela",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Young Chimi",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Lunay",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Greeicy",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Piso 21",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Cali y El Dandee",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Bryant Myers",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Sech",
+   "genre": "urbano",
+   "lo": 55,
+   "hi": 100
+  },
+  {
+   "name": "Dei V",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "J Álvarez",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Ñejo",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Darell",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Baby Rasta y Gringo",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Alexis y Fido",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Lennox",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Ovy On The Drums",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Brytiago",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Tony Dize",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Chimbala",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Andy Rivera",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Kevin Roldán",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Alleh y Yorghaki",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Reykon",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Big Soto",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Westcol",
+   "genre": "urbano",
+   "lo": 30,
+   "hi": 55
+  },
+  {
+   "name": "Pirlo",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Kris R",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Luigi 21 Plus",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Omar Courtz",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Miky Woodz",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Jon Z",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Jombriel",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Almighty",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Noriel",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Mackie",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Llane",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "Crissin",
+   "genre": "urbano",
+   "lo": 20,
+   "hi": 35
+  },
+  {
+   "name": "VALKA",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Topboy",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Yelsid",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "El Dominio",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Gotay",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Ovi El Cubano",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Trébol Clan",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Anonimus",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Boza",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Jory Boy",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Yailin la Más Viral",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Pressure",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Amaro",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Karen Méndez",
+   "genre": "urbano",
+   "lo": 10,
+   "hi": 20
+  },
+  {
+   "name": "Maisak",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Xantos",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Esteban Rojas",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Aria Vega",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Lil Silvio y El Vega",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Lalo Ebratt",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "El Americano 4KT",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Juan Duque",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Golpe a Golpe",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Rayo & Toby",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Pipe Calderón",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Tury",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Nath",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Yandar & Yostin",
+   "genre": "urbano",
+   "lo": 5,
+   "hi": 10
+  },
+  {
+   "name": "Soley",
+   "genre": "urbano",
+   "lo": 1,
+   "hi": 5
+  },
+  {
+   "name": "Clooy",
+   "genre": "urbano",
+   "lo": 1,
+   "hi": 5
+  },
+  {
+   "name": "Carabine",
+   "genre": "urbano",
+   "lo": 1,
+   "hi": 5
+  },
+  {
+   "name": "Geezy",
+   "genre": "urbano",
+   "lo": 1,
+   "hi": 5
+  },
+  {
+   "name": "Fatty",
+   "genre": "urbano",
+   "lo": 1,
+   "hi": 5
+  },
+  {
+   "name": "Ivy Queen",
+   "genre": "urbano",
+   "lo": null,
+   "hi": null
+  },
+  {
+   "name": "Mike Bahía",
+   "genre": "urbano",
+   "lo": null,
+   "hi": null
+  },
+  {
+   "name": "Juanka",
+   "genre": "urbano",
+   "lo": null,
+   "hi": null
+  },
+  {
+   "name": "Darkiel",
+   "genre": "urbano",
+   "lo": null,
+   "hi": null
+  },
+  {
+   "name": "Mr. Saik",
+   "genre": "urbano",
+   "lo": null,
+   "hi": null
+  },
+  {
+   "name": "Luis Alfonso",
+   "genre": "popular",
+   "lo": 45,
+   "hi": 65
+  },
+  {
+   "name": "Luis Alberto Posada",
+   "genre": "popular",
+   "lo": 45,
+   "hi": 65
+  },
+  {
+   "name": "Jessi Uribe",
+   "genre": "popular",
+   "lo": 45,
+   "hi": 65
+  },
+  {
+   "name": "Jhon Alex Castaño",
+   "genre": "popular",
+   "lo": 25,
+   "hi": 40
+  },
+  {
+   "name": "El Andariego",
+   "genre": "popular",
+   "lo": 25,
+   "hi": 40
+  },
+  {
+   "name": "Alzate",
+   "genre": "popular",
+   "lo": 25,
+   "hi": 40
+  },
+  {
+   "name": "Fernando Burbano",
+   "genre": "popular",
+   "lo": 25,
+   "hi": 40
+  },
+  {
+   "name": "Paola Jara",
+   "genre": "popular",
+   "lo": 15,
+   "hi": 25
+  },
+  {
+   "name": "Hernán Gómez",
+   "genre": "popular",
+   "lo": 15,
+   "hi": 25
+  },
+  {
+   "name": "Nico Hernández",
+   "genre": "popular",
+   "lo": 15,
+   "hi": 25
+  },
+  {
+   "name": "Natanael Cano",
+   "genre": "regional",
+   "lo": 250,
+   "hi": 500
+  },
+  {
+   "name": "Grupo Frontera",
+   "genre": "regional",
+   "lo": null,
+   "hi": null
+  },
+  {
+   "name": "Fuerza Regida",
+   "genre": "regional",
+   "lo": null,
+   "hi": null
+  },
+  {
+   "name": "Junior H",
+   "genre": "regional",
+   "lo": null,
+   "hi": null
+  },
+  {
+   "name": "Silvestre Dangond",
+   "genre": "vallenato",
+   "lo": 250,
+   "hi": 350
+  },
+  {
+   "name": "Jorge Celedón",
+   "genre": "vallenato",
+   "lo": 30,
+   "hi": 60
+  },
+  {
+   "name": "Felipe Peláez",
+   "genre": "vallenato",
+   "lo": 30,
+   "hi": 60
+  },
+  {
+   "name": "Jean Carlos Centeno",
+   "genre": "vallenato",
+   "lo": 30,
+   "hi": 60
+  },
+  {
+   "name": "Nelson Velásquez",
+   "genre": "vallenato",
+   "lo": 20,
+   "hi": 30
+  },
+  {
+   "name": "Hebert Vargas",
+   "genre": "vallenato",
+   "lo": 20,
+   "hi": 30
+  },
+  {
+   "name": "Elder Dayán",
+   "genre": "vallenato",
+   "lo": 20,
+   "hi": 30
+  },
+  {
+   "name": "Guayacán Orquesta",
+   "genre": "salsa",
+   "lo": 60,
+   "hi": 120
+  },
+  {
+   "name": "Grupo Niche",
+   "genre": "salsa",
+   "lo": 60,
+   "hi": 120
+  },
+  {
+   "name": "Jerry Rivera",
+   "genre": "salsa",
+   "lo": 60,
+   "hi": 120
+  },
+  {
+   "name": "Adolescentes Orquesta",
+   "genre": "salsa",
+   "lo": 5,
+   "hi": 40
+  },
+  {
+   "name": "Maelo Ruiz",
+   "genre": "salsa",
+   "lo": 5,
+   "hi": 40
+  },
+  {
+   "name": "Gabino Pampini",
+   "genre": "salsa",
+   "lo": 5,
+   "hi": 40
+  },
+  {
+   "name": "Kybba",
+   "genre": "djs",
+   "lo": 30,
+   "hi": 40
+  },
+  {
+   "name": "Natalia París",
+   "genre": "djs",
+   "lo": 3,
+   "hi": 12
+  },
+  {
+   "name": "Marcela Reyes",
+   "genre": "djs",
+   "lo": 3,
+   "hi": 12
+  },
+  {
+   "name": "Manguito DJ",
+   "genre": "djs",
+   "lo": 3,
+   "hi": 12
+  },
+  {
+   "name": "Fumaratto",
+   "genre": "djs",
+   "lo": 3,
+   "hi": 12
+  }
+ ]
+}

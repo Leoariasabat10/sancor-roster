@@ -3,732 +3,407 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Decisión del dueño: el sitio se mantiene fuera de buscadores (lista de tarifas). Quitar la línea siguiente para indexarlo. -->
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#f8f9fb">
-<title>Roster de Artistas — SANCOR MGMT</title>
-<meta name="description" content="134 artistas en 6 géneros: Reggaetón/Urbano, Música Popular, Regional Mexicano, Vallenato, Salsa y DJ's. Booking internacional.">
+<meta name="theme-color" content="#090909">
+<title>SANCOR MGMT — Booking y management de artistas</title>
+<meta name="description" content="Booking y management internacional. 134 artistas urbanos y latinos en 6 géneros. Cada show se negocia caso a caso.">
+<link rel="canonical" href="https://sancormgmt-blip.github.io/sancor-roster/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Roster de Artistas — SANCOR MGMT">
-<meta property="og:description" content="134 artistas · 6 géneros · Booking internacional. Reggaetón, Popular, Regional MX, Vallenato, Salsa y DJ's.">
+<meta property="og:title" content="SANCOR MGMT — Booking y management de artistas">
+<meta property="og:description" content="134 artistas urbanos y latinos. Cotiza tu próximo show con SANCOR.">
 <meta property="og:url" content="https://sancormgmt-blip.github.io/sancor-roster/">
 <meta property="og:image" content="https://sancormgmt-blip.github.io/sancor-roster/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="es_CO">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f8f9fb'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='bold' fill='%231c39bb' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script>document.documentElement.className+=' js';</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --bg:#f8f9fb; --bg-alt:#eef1f6; --surface:#ffffff;
-  --ink:#15171c; --ink-2:#464a54; --muted:#858a96;
-  --blue:#1c39bb; --blue-deep:#142c99; --blue-wash:#e9edfb;
-  --line:#e3e6ee; --wa:#25d366;
-  --ease:cubic-bezier(.22,.61,.36,1); --dur:.7s;
-}
-html{scroll-behavior:smooth}
-html,body{background:var(--bg);color:var(--ink)}
-body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.6;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-button{font-family:inherit;cursor:pointer}
-img{max-width:100%;height:auto}
-
-/* ---- Motion (solo con JS; estado final por defecto) ---- */
-.js .reveal{opacity:0;transform:translateY(24px);transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease)}
-.js .reveal.in{opacity:1;transform:none}
-.js .line{display:block;overflow:hidden}
-.js .line>span{display:inline-block;transform:translateY(112%);transition:transform .9s var(--ease) .15s}
-.js .ready .line>span{transform:none}
-.js .hero-fade{opacity:0;transition:opacity 1s var(--ease) .45s}
-.js .ready .hero-fade{opacity:1}
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-  .js .reveal,.js .hero-fade{opacity:1;transform:none}
-  .js .line>span{transform:none}
-}
-
-/* ---- Barra de progreso ---- */
-.progress{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--blue-deep));transform:scaleX(0);transform-origin:0 50%;z-index:100;pointer-events:none}
-@supports (animation-timeline: scroll()){
-  .progress{animation:grow linear both;animation-timeline:scroll(root block)}
-  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-}
-
-/* ---- HERO ---- */
-.hero{text-align:center;padding:clamp(40px,8vh,84px) 20px 28px;max-width:760px;margin:0 auto}
-.hero .logo{width:min(300px,64vw);aspect-ratio:1024/476;object-fit:cover;object-position:center;margin:0 auto 8px;display:block;mix-blend-mode:multiply}
-.hero h1{font-size:clamp(30px,5.4vw,46px);font-weight:700;letter-spacing:-0.02em;line-height:1.12;color:var(--ink)}
-.hero .sub{font-size:12px;color:var(--muted);letter-spacing:.24em;text-transform:uppercase;margin:14px 0 40px}
-.stats{display:flex;justify-content:center;gap:clamp(28px,6vw,64px)}
-.stats div{text-align:center}
-.stats b{display:block;font-size:clamp(24px,3.4vw,32px);font-weight:700;color:var(--blue-deep);line-height:1;margin-bottom:6px;font-variant-numeric:tabular-nums}
-.stats span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.18em}
-.hero-line{max-width:220px;height:1px;background:linear-gradient(90deg,transparent,var(--blue),transparent);margin:44px auto 0;opacity:.6}
-
-/* ---- INTRO ---- */
-.intro-note{max-width:760px;margin:0 auto;padding:14px 20px 0}
-.intro-inner{padding:22px 26px;background:var(--surface);border:1px solid var(--line);border-left:2px solid var(--blue);border-radius:12px}
-.intro-inner .tag{font-size:10px;font-weight:600;color:var(--blue-deep);text-transform:uppercase;letter-spacing:.2em;margin-bottom:10px}
-.intro-inner p{font-size:13.5px;color:var(--ink-2);line-height:1.7;margin-bottom:8px}
-.intro-inner p:last-child{margin-bottom:0}
-.intro-inner strong{color:var(--ink);font-weight:600}
-
-/* ---- PAQUETE ESPECIAL ---- */
-.pack{max-width:760px;margin:0 auto;padding:16px 20px 4px}
-.pack.hidden{display:none}
-.pack-inner{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;padding:24px 26px;background:var(--blue-wash);border:1px solid #d3dbf4;border-radius:14px}
-.pack-info{flex:1;min-width:220px}
-.pack .tag{font-size:10px;font-weight:600;color:var(--blue-deep);text-transform:uppercase;letter-spacing:.2em;margin-bottom:8px}
-.pack h2{font-size:21px;font-weight:700;letter-spacing:-0.01em;margin-bottom:4px}
-.pack .lineup{font-size:13px;color:var(--ink-2)}
-.pack-cta{display:flex;align-items:center;gap:16px}
-.pack .price{font-size:15px;font-weight:700;color:var(--blue-deep);white-space:nowrap;font-variant-numeric:tabular-nums}
-.pack a.btn{display:inline-flex;align-items:center;padding:11px 20px;background:var(--ink);color:var(--bg);border-radius:10px;font-size:13px;font-weight:600;min-height:44px;transition:transform .3s var(--ease)}
-.pack a.btn:hover{transform:translateY(-1px)}
-
-/* ---- TOOLBAR ---- */
-.toolbar{position:sticky;top:0;z-index:30;background:rgba(248,249,251,.97);border-bottom:1px solid var(--line)}
-.toolbar-inner{max-width:760px;margin:0 auto;padding:14px 20px 12px}
-.search-row{position:relative;margin-bottom:12px}
-.search-row input{width:100%;padding:13px 44px 13px 42px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--ink);font-size:16px;outline:none;transition:border-color .25s var(--ease)}
-.search-row input:focus{border-color:var(--blue)}
-.search-row input::placeholder{color:#aab0bd}
-.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;display:flex}
-.clear-btn{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:transparent;border:none;color:var(--muted);width:34px;height:34px;font-size:19px;display:none;border-radius:50%}
-.clear-btn:hover{background:var(--bg-alt);color:var(--ink)}
-.filter-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none}
-.filter-row::-webkit-scrollbar{display:none}
-.filter-label{flex-shrink:0;font-size:9.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.16em;width:86px}
-.pills{display:inline-flex;gap:6px;padding:2px 0}
-.pill{flex-shrink:0;padding:8px 15px;background:var(--surface);border:1px solid var(--line);border-radius:20px;color:var(--ink-2);font-size:13px;font-weight:500;white-space:nowrap;transition:border-color .25s var(--ease),background .25s var(--ease),color .25s var(--ease);min-height:36px}
-.pill:hover{border-color:var(--blue)}
-.pill.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.count-row{display:flex;align-items:center;justify-content:space-between;padding-top:9px;border-top:1px solid var(--line);margin-top:6px}
-.count{font-size:10.5px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
-.count b{color:var(--blue-deep);font-weight:700;font-variant-numeric:tabular-nums}
-.reset-btn{font-size:10.5px;color:var(--muted);background:none;border:none;text-transform:uppercase;letter-spacing:.14em;font-weight:600;display:none;padding:4px 0}
-.reset-btn:hover{color:var(--blue-deep)}
-.toolbar.compact .count-row{display:none}
-.toolbar.compact .toolbar-inner{padding-top:10px;padding-bottom:9px}
-.toolbar.compact .search-row{margin-bottom:8px}
-.toolbar.compact .filter-label{display:none}
-
-/* ---- RESULTS ---- */
-.results-zone{min-height:calc(100vh - 170px)}
-.results{max-width:760px;margin:0 auto;padding:34px 20px 24px}
-.genre-section{margin-bottom:56px}
-.genre-section:last-child{margin-bottom:24px}
-.genre-header{display:flex;align-items:baseline;gap:14px;margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
-.genre-num{font-size:12px;font-weight:600;color:var(--blue);letter-spacing:.08em;font-variant-numeric:tabular-nums}
-.genre-name{font-size:clamp(19px,2.6vw,23px);font-weight:700;letter-spacing:-0.015em;color:var(--ink)}
-.genre-count{margin-left:auto;font-size:10.5px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;font-variant-numeric:tabular-nums;white-space:nowrap}
-.tier-block{margin-bottom:22px}
-.tier-header{display:flex;align-items:center;gap:12px;margin:20px 2px 10px}
-.tier-block:first-of-type .tier-header{margin-top:2px}
-.tier-name{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.2em}
-.tier-block.elite .tier-name{color:var(--blue-deep)}
-.tier-block.elite .tier-name::before{content:"\2726\00a0\00a0";color:var(--blue)}
-.tier-line{flex:1;height:1px;background:var(--line)}
-.artist-list{background:var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr;gap:1px;border:1px solid var(--line)}
-.artist{display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--surface);min-height:56px;transition:background .25s var(--ease)}
-.artist:hover,.artist:active{background:var(--bg-alt)}
-.artist.elite{background:linear-gradient(90deg,var(--blue-wash) 0%,var(--surface) 72%)}
-.artist.elite:hover{background:var(--blue-wash)}
-.artist .name{flex:1;font-size:15px;font-weight:500;letter-spacing:-0.005em;color:var(--ink)}
-.artist.elite .name{color:var(--blue-deep);font-weight:600}
-.artist .arrow{color:#c2c8d8;flex-shrink:0;width:14px;height:14px;display:flex;align-items:center;justify-content:center;transition:transform .3s var(--ease),color .3s var(--ease)}
-.artist:hover .arrow{color:var(--blue-deep);transform:translateX(3px)}
-
-/* ---- NO RESULTS ---- */
-.no-results{text-align:center;padding:64px 24px;color:var(--muted);display:none}
-.no-results.show{display:block}
-.no-results h3{font-size:15px;color:var(--ink-2);margin-bottom:6px;font-weight:600}
-.no-results p{font-size:13px;margin-bottom:14px}
-.no-results a{color:var(--blue-deep);font-weight:600;min-height:44px;display:inline-flex;align-items:center}
-
-/* ---- FOOTER ---- */
-.footer{text-align:center;padding:56px 20px 120px;border-top:1px solid var(--line);margin-top:48px;background:var(--surface)}
-.footer .logo{width:170px;aspect-ratio:1024/476;object-fit:cover;margin:0 auto 4px;display:block;opacity:.9;mix-blend-mode:multiply}
-.footer .tagline{font-size:10.5px;color:var(--muted);margin-bottom:30px;letter-spacing:.22em;text-transform:uppercase}
-.footer .wa-cta{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:var(--wa);color:#fff;border-radius:12px;font-weight:600;font-size:15px;margin-bottom:28px;min-height:48px;transition:transform .3s var(--ease)}
-.footer .wa-cta:hover{transform:translateY(-2px)}
-.footer .wa-cta svg{width:18px;height:18px;fill:#fff}
-.footer .links{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 26px;margin-bottom:24px}
-.footer .links a{color:var(--ink-2);font-size:13px;min-height:44px;display:flex;align-items:center}
-.footer .links a:hover{color:var(--blue-deep)}
-.footer .legal{font-size:11px;color:var(--muted);max-width:360px;margin:0 auto;line-height:1.75}
-
-/* ---- FLOTANTES ---- */
-.float-wa{position:fixed;bottom:22px;right:22px;width:54px;height:54px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;z-index:50;box-shadow:0 6px 20px rgba(37,211,102,.3)}
-.float-wa svg{width:26px;height:26px;fill:#fff}
-.scroll-top{position:fixed;bottom:88px;right:26px;width:44px;height:44px;border-radius:50%;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);display:flex;align-items:center;justify-content:center;z-index:40;box-shadow:0 4px 14px rgba(0,0,0,.06);transition:opacity .35s var(--ease),transform .35s var(--ease);opacity:0;pointer-events:none;transform:translateY(6px)}
-.scroll-top.show{opacity:1;pointer-events:auto;transform:none}
-.scroll-top:hover{color:var(--blue-deep);border-color:var(--blue)}
-.scroll-top svg{width:18px;height:18px}
-
-@media(max-width:380px){
-  .hero{padding-top:32px}
-  .stats{gap:22px}
-  .filter-label{width:auto;padding-right:2px}
-  .float-wa{bottom:18px;right:18px;width:50px;height:50px}
-  .scroll-top{bottom:82px;right:20px}
-}
-@media(min-width:720px){
-  .artist-list{grid-template-columns:1fr 1fr}
-}
-@media(min-width:1000px){
-  .artist-list{grid-template-columns:1fr 1fr 1fr}
-}
-</style>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/logo-light.webp" as="image" fetchpriority="high">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script src="js/main.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#roster">Saltar al roster</a>
+<div class="progress" aria-hidden="true"></div>
 
-<div class="progress" id="progress"></div>
-
-<!-- HERO -->
-<header class="hero">
-  <img class="logo hero-fade" src="logo.webp" alt="Sancor MGMT" width="1024" height="476" fetchpriority="high">
-  <h1><span class="line"><span>Roster de Artistas</span></span></h1>
-  <p class="sub hero-fade">Booking &amp; Management Internacional</p>
-  <div class="stats hero-fade" id="stats">
-    <div><b data-n="134" data-suffix="">134</b><span>Artistas</span></div>
-    <div><b data-n="6" data-suffix="">6</b><span>G&eacute;neros</span></div>
-    <div><b data-n="15" data-suffix="+">15+</b><span>Pa&iacute;ses</span></div>
-  </div>
-  <div class="hero-line hero-fade"></div>
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="SANCOR MGMT, inicio"><img src="img/logo-light.webp" alt="SANCOR MGMT" width="832" height="390"></a>
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="#cotizar">Cómo cotizamos</a>
+    <a href="#elite">Elite</a>
+    <a href="#roster">Roster</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn btn-solid nav-cta" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20roster%20de%20artistas" target="_blank" rel="noopener noreferrer">Cotizar</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav"><span class="menu-label">Menú</span><span class="menu-icon" aria-hidden="true"></span></button>
 </header>
 
-<!-- SOBRE LOS PRECIOS -->
-<section class="intro-note">
-  <div class="intro-inner">
-    <div class="tag">Sobre los precios</div>
-    <p>Los rangos listados son <strong>referenciales</strong> y se mueven dentro de m&aacute;rgenes est&aacute;ndar del mercado. La tarifa final depende del <strong>venue</strong>, el <strong>tipo de evento</strong>, el <strong>aforo</strong>, la <strong>ciudad o pa&iacute;s</strong> y del <strong>promotor</strong> (p&uacute;blico o privado), entre otros factores.</p>
-    <p>Cada show se negocia <strong>caso a caso</strong> para llegar al mejor acuerdo posible.</p>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <img class="hero-logo" src="img/logo-light.webp" alt="" width="832" height="390" fetchpriority="high">
+  <h1 id="hero-title" class="hero-title">
+    <span class="mask"><span>Artistas.</span></span>
+    <span class="mask"><span>Escenarios.</span></span>
+    <span class="mask"><span>Acuerdos.</span></span>
+  </h1>
+  <div class="hero-foot">
+    <p class="hero-lede">Booking y management internacional de artistas urbanos y latinos. Un solo contacto para cotizar, negociar y cerrar cada show.</p>
+    <dl class="hero-stats">
+      <div><dt>Artistas</dt><dd>134</dd></div>
+      <div><dt>Géneros</dt><dd>6</dd></div>
+      <div><dt>Países</dt><dd>15+</dd></div>
+    </dl>
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="#roster">Ver el roster</a>
+      <a class="btn btn-line" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20roster%20de%20artistas" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#cotizar" aria-label="Bajar al contenido"><span></span></a>
+</section>
+
+<section class="how" id="cotizar" aria-labelledby="how-title">
+  <h2 id="how-title" class="serif-statement" data-reveal>Cada show se negocia caso a caso.</h2>
+  <div class="how-body" data-reveal>
+    <p>Los rangos del roster son referenciales y se mueven dentro de márgenes estándar del mercado. La tarifa final se define con cada promotor, buscando el mejor acuerdo posible para ambas partes.</p>
+    <p class="how-lead">La tarifa final depende de:</p>
+    <ul class="factors">
+      <li>El venue</li>
+      <li>El tipo de evento</li>
+      <li>El aforo</li>
+      <li>La ciudad o el país</li>
+      <li>El promotor, público o privado</li>
+    </ul>
   </div>
 </section>
 
-<!-- PAQUETE ESPECIAL -->
-<section class="pack" id="pack">
-  <div class="pack-inner">
-    <div class="pack-info">
-      <div class="tag">Paquete especial</div>
-      <h2>Los Extraditables</h2>
-      <p class="lineup">Carabine &middot; Tury &middot; Geezy &middot; Fatty &mdash; cuatro artistas, un solo show</p>
-    </div>
-    <div class="pack-cta">
-      <span class="price">$10,000 USD</span>
-      <a class="btn" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20el%20paquete%20Los%20Extraditables" target="_blank" rel="noopener">Cotizar</a>
-    </div>
+<section class="elite" id="elite" aria-labelledby="elite-title">
+  <header class="section-head">
+    <h2 id="elite-title" class="display" data-reveal>Elite</h2>
+    <p class="section-note" data-reveal>Artistas con tarifa desde $200K USD. Toca un nombre para cotizar.</p>
+  </header>
+  <ul class="poster-grid">
+
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Arcangel" target="_blank" rel="noopener noreferrer" data-reveal style="--i:0">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">A</span></span>
+        <span class="poster-name">Arcangel</span>
+        <span class="poster-meta"><span>Reggaeton / Urbano</span><span>$250K – $500K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Beele" target="_blank" rel="noopener noreferrer" data-reveal style="--i:1">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">B</span></span>
+        <span class="poster-name">Beele</span>
+        <span class="poster-meta"><span>Reggaeton / Urbano</span><span>$250K – $500K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Rauw%20Alejandro" target="_blank" rel="noopener noreferrer" data-reveal style="--i:2">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">RA</span></span>
+        <span class="poster-name">Rauw Alejandro</span>
+        <span class="poster-meta"><span>Reggaeton / Urbano</span><span>$250K – $500K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Natanael%20Cano" target="_blank" rel="noopener noreferrer" data-reveal style="--i:0">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">NC</span></span>
+        <span class="poster-name">Natanael Cano</span>
+        <span class="poster-meta"><span>Regional Mexicano</span><span>$250K – $500K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Silvestre%20Dangond" target="_blank" rel="noopener noreferrer" data-reveal style="--i:1">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">SD</span></span>
+        <span class="poster-name">Silvestre Dangond</span>
+        <span class="poster-meta"><span>Vallenato</span><span>$250K – $350K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Nicky%20Jam" target="_blank" rel="noopener noreferrer" data-reveal style="--i:2">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">NJ</span></span>
+        <span class="poster-name">Nicky Jam</span>
+        <span class="poster-meta"><span>Reggaeton / Urbano</span><span>$200K – $300K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Ozuna" target="_blank" rel="noopener noreferrer" data-reveal style="--i:0">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">O</span></span>
+        <span class="poster-name">Ozuna</span>
+        <span class="poster-meta"><span>Reggaeton / Urbano</span><span>$200K – $300K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Myke%20Towers" target="_blank" rel="noopener noreferrer" data-reveal style="--i:1">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">MT</span></span>
+        <span class="poster-name">Myke Towers</span>
+        <span class="poster-meta"><span>Reggaeton / Urbano</span><span>$200K – $300K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Ryan%20Castro" target="_blank" rel="noopener noreferrer" data-reveal style="--i:2">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">RC</span></span>
+        <span class="poster-name">Ryan Castro</span>
+        <span class="poster-meta"><span>Reggaeton / Urbano</span><span>$200K – $300K USD</span></span>
+      </a></li>
+      <li><a class="poster" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Camilo" target="_blank" rel="noopener noreferrer" data-reveal style="--i:0">
+        <span class="poster-media" aria-hidden="true"><span class="poster-mono">C</span></span>
+        <span class="poster-name">Camilo</span>
+        <span class="poster-meta"><span>Reggaeton / Urbano</span><span>$200K – $300K USD</span></span>
+      </a></li>
+  </ul>
+</section>
+
+<section class="pack" id="paquete" aria-labelledby="pack-title">
+  <p class="pack-kicker" data-reveal>Paquete especial</p>
+  <h2 id="pack-title" class="display pack-title" data-reveal>Los Extraditables</h2>
+  <p class="pack-lineup" data-reveal>Carabine, Tury, Geezy y Fatty. Cuatro artistas, un solo show.</p>
+  <div class="pack-cta" data-reveal>
+    <span class="pack-price">$10,000 USD</span>
+    <a class="btn btn-solid" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20el%20paquete%20Los%20Extraditables" target="_blank" rel="noopener noreferrer">Cotizar el paquete</a>
   </div>
 </section>
 
-<!-- TOOLBAR -->
-<div id="toolbarSentinel"></div>
-<div class="toolbar" id="toolbar">
-  <div class="toolbar-inner">
-    <div class="search-row">
-      <span class="search-icon">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>
-      </span>
-      <input type="text" id="search" placeholder="Buscar artista..." autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Buscar artista">
-      <button class="clear-btn" id="clearBtn" aria-label="Limpiar b&uacute;squeda">&times;</button>
-    </div>
-    <div class="filter-row">
-      <span class="filter-label">G&eacute;nero</span>
-      <div class="pills" id="genrePills">
-        <button class="pill on" data-g="all">Todos</button>
-        <button class="pill" data-g="urbano">Urbano</button>
-        <button class="pill" data-g="popular">Popular</button>
-        <button class="pill" data-g="regional">Regional MX</button>
-        <button class="pill" data-g="vallenato">Vallenato</button>
-        <button class="pill" data-g="salsa">Salsa</button>
-        <button class="pill" data-g="djs">DJ&apos;s</button>
+<section class="roster" id="roster" aria-labelledby="roster-title">
+  <header class="section-head">
+    <h2 id="roster-title" class="display" data-reveal>Roster completo</h2>
+  </header>
+
+  <div class="toolbar" id="toolbar" role="search">
+    <label class="search"><span class="sr-only">Buscar artista</span>
+      <input type="search" id="search" placeholder="Buscar artista" autocomplete="off" spellcheck="false">
+    </label>
+    <div class="filters">
+      <div class="pill-group" id="genrePills" role="group" aria-label="Filtrar por género">
+        <button class="pill" data-g="all" aria-pressed="true">Todos</button>
+        <button class="pill" data-g="urbano" aria-pressed="false">Urbano</button>
+        <button class="pill" data-g="popular" aria-pressed="false">Popular</button>
+        <button class="pill" data-g="regional" aria-pressed="false">Regional MX</button>
+        <button class="pill" data-g="vallenato" aria-pressed="false">Vallenato</button>
+        <button class="pill" data-g="salsa" aria-pressed="false">Salsa</button>
+        <button class="pill" data-g="djs" aria-pressed="false">DJ's</button>
+      </div>
+      <div class="pill-group" id="budgetPills" role="group" aria-label="Filtrar por presupuesto">
+        <button class="pill" data-b="all" aria-pressed="true">Todo presupuesto</button>
+        <button class="pill" data-b="high" aria-pressed="false">$150K+</button>
+        <button class="pill" data-b="mid" aria-pressed="false">$50K–$150K</button>
+        <button class="pill" data-b="low" aria-pressed="false">$10K–$50K</button>
+        <button class="pill" data-b="entry" aria-pressed="false">Menos de $10K</button>
+        <button class="pill" data-b="consulta" aria-pressed="false">Bajo consulta</button>
       </div>
     </div>
-    <div class="filter-row">
-      <span class="filter-label">Presupuesto</span>
-      <div class="pills" id="budgetPills">
-        <button class="pill on" data-b="all">Todos</button>
-        <button class="pill" data-b="high">$150K+</button>
-        <button class="pill" data-b="mid">$50K&ndash;$150K</button>
-        <button class="pill" data-b="low">$10K&ndash;$50K</button>
-        <button class="pill" data-b="entry">&lt; $10K</button>
-        <button class="pill" data-b="consulta">Bajo consulta</button>
-      </div>
-    </div>
-    <div class="count-row">
-      <span class="count" id="countLabel"><b>0</b> artistas</span>
-      <button class="reset-btn" id="resetBtn">Limpiar filtros</button>
+    <div class="toolbar-foot">
+      <p class="count" id="count" aria-live="polite"><b>134</b> artistas</p>
+      <button class="reset" id="reset" hidden>Limpiar filtros</button>
     </div>
   </div>
-</div>
 
-<!-- RESULTS -->
-<div class="results-zone">
-  <main class="results" id="results"></main>
-  <div class="no-results" id="noResults">
-    <h3>Sin resultados</h3>
-    <p>No encontramos artistas con esos filtros.</p>
-    <a href="https://wa.me/573178850263?text=Hola%2C%20busco%20un%20artista%20que%20no%20encuentro%20en%20el%20roster" target="_blank" rel="noopener">Pregunt&aacute;nos por WhatsApp &rarr;</a>
+  <div class="index" id="index">
+
+    <section class="genre" data-genre="urbano" aria-labelledby="g-urbano">
+      <header class="genre-head"><h3 id="g-urbano">Reggaeton / Urbano</h3><span class="genre-count">102</span></header>
+      <div class="tier"><h4 class="tier-name">$200K+</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="high" data-name="arcangel"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Arcangel" target="_blank" rel="noopener noreferrer"><span class="artist-name">Arcangel</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="beele"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Beele" target="_blank" rel="noopener noreferrer"><span class="artist-name">Beele</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="rauw alejandro"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Rauw%20Alejandro" target="_blank" rel="noopener noreferrer"><span class="artist-name">Rauw Alejandro</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="nicky jam"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Nicky%20Jam" target="_blank" rel="noopener noreferrer"><span class="artist-name">Nicky Jam</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="ozuna"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Ozuna" target="_blank" rel="noopener noreferrer"><span class="artist-name">Ozuna</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="myke towers"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Myke%20Towers" target="_blank" rel="noopener noreferrer"><span class="artist-name">Myke Towers</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="ryan castro"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Ryan%20Castro" target="_blank" rel="noopener noreferrer"><span class="artist-name">Ryan Castro</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="camilo"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Camilo" target="_blank" rel="noopener noreferrer"><span class="artist-name">Camilo</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$100K – $200K</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="high" data-name="chencho corleone"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Chencho%20Corleone" target="_blank" rel="noopener noreferrer"><span class="artist-name">Chencho Corleone</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="blessd"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Blessd" target="_blank" rel="noopener noreferrer"><span class="artist-name">Blessd</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="anuel"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Anuel" target="_blank" rel="noopener noreferrer"><span class="artist-name">Anuel</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="farruko"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Farruko" target="_blank" rel="noopener noreferrer"><span class="artist-name">Farruko</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="kapo"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Kapo" target="_blank" rel="noopener noreferrer"><span class="artist-name">Kapo</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="sebastian yatra"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Sebasti%C3%A1n%20Yatra" target="_blank" rel="noopener noreferrer"><span class="artist-name">Sebastián Yatra</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="manuel turizo"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Manuel%20Turizo" target="_blank" rel="noopener noreferrer"><span class="artist-name">Manuel Turizo</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="yandel"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Yandel" target="_blank" rel="noopener noreferrer"><span class="artist-name">Yandel</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="high" data-name="jhayco"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jhayco" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jhayco</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="justin quiles"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Justin%20Quiles" target="_blank" rel="noopener noreferrer"><span class="artist-name">Justin Quiles</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="young miko"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Young%20Miko" target="_blank" rel="noopener noreferrer"><span class="artist-name">Young Miko</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="eladio carrion"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Eladio%20Carri%C3%B3n" target="_blank" rel="noopener noreferrer"><span class="artist-name">Eladio Carrión</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$55K – $100K</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="mid" data-name="lenny tavarez"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Lenny%20Tav%C3%A1rez" target="_blank" rel="noopener noreferrer"><span class="artist-name">Lenny Tavárez</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="de la ghetto"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20De%20La%20Ghetto" target="_blank" rel="noopener noreferrer"><span class="artist-name">De La Ghetto</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="jowell y randy"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jowell%20y%20Randy" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jowell y Randy</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="zion"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Zion" target="_blank" rel="noopener noreferrer"><span class="artist-name">Zion</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="nengo flow"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20%C3%91engo%20Flow" target="_blank" rel="noopener noreferrer"><span class="artist-name">Ñengo Flow</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="hades"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Hades" target="_blank" rel="noopener noreferrer"><span class="artist-name">Hades</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="luar la l"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Luar%20La%20L" target="_blank" rel="noopener noreferrer"><span class="artist-name">Luar La L</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="cosculluela"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Cosculluela" target="_blank" rel="noopener noreferrer"><span class="artist-name">Cosculluela</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="young chimi"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Young%20Chimi" target="_blank" rel="noopener noreferrer"><span class="artist-name">Young Chimi</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="lunay"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Lunay" target="_blank" rel="noopener noreferrer"><span class="artist-name">Lunay</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="greeicy"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Greeicy" target="_blank" rel="noopener noreferrer"><span class="artist-name">Greeicy</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="piso 21"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Piso%2021" target="_blank" rel="noopener noreferrer"><span class="artist-name">Piso 21</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="cali y el dandee"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Cali%20y%20El%20Dandee" target="_blank" rel="noopener noreferrer"><span class="artist-name">Cali y El Dandee</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="bryant myers"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Bryant%20Myers" target="_blank" rel="noopener noreferrer"><span class="artist-name">Bryant Myers</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="mid" data-name="sech"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Sech" target="_blank" rel="noopener noreferrer"><span class="artist-name">Sech</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$30K – $55K</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="low" data-name="dei v"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Dei%20V" target="_blank" rel="noopener noreferrer"><span class="artist-name">Dei V</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="j alvarez"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20J%20%C3%81lvarez" target="_blank" rel="noopener noreferrer"><span class="artist-name">J Álvarez</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="nejo"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20%C3%91ejo" target="_blank" rel="noopener noreferrer"><span class="artist-name">Ñejo</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="darell"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Darell" target="_blank" rel="noopener noreferrer"><span class="artist-name">Darell</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="baby rasta y gringo"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Baby%20Rasta%20y%20Gringo" target="_blank" rel="noopener noreferrer"><span class="artist-name">Baby Rasta y Gringo</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="alexis y fido"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Alexis%20y%20Fido" target="_blank" rel="noopener noreferrer"><span class="artist-name">Alexis y Fido</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="lennox"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Lennox" target="_blank" rel="noopener noreferrer"><span class="artist-name">Lennox</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="ovy on the drums"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Ovy%20On%20The%20Drums" target="_blank" rel="noopener noreferrer"><span class="artist-name">Ovy On The Drums</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="brytiago"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Brytiago" target="_blank" rel="noopener noreferrer"><span class="artist-name">Brytiago</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="tony dize"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Tony%20Dize" target="_blank" rel="noopener noreferrer"><span class="artist-name">Tony Dize</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="chimbala"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Chimbala" target="_blank" rel="noopener noreferrer"><span class="artist-name">Chimbala</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="andy rivera"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Andy%20Rivera" target="_blank" rel="noopener noreferrer"><span class="artist-name">Andy Rivera</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="kevin roldan"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Kevin%20Rold%C3%A1n" target="_blank" rel="noopener noreferrer"><span class="artist-name">Kevin Roldán</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="alleh y yorghaki"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Alleh%20y%20Yorghaki" target="_blank" rel="noopener noreferrer"><span class="artist-name">Alleh y Yorghaki</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="reykon"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Reykon" target="_blank" rel="noopener noreferrer"><span class="artist-name">Reykon</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="big soto"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Big%20Soto" target="_blank" rel="noopener noreferrer"><span class="artist-name">Big Soto</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="westcol"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Westcol" target="_blank" rel="noopener noreferrer"><span class="artist-name">Westcol</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$20K – $35K</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="low" data-name="pirlo"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Pirlo" target="_blank" rel="noopener noreferrer"><span class="artist-name">Pirlo</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="kris r"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Kris%20R" target="_blank" rel="noopener noreferrer"><span class="artist-name">Kris R</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="luigi 21 plus"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Luigi%2021%20Plus" target="_blank" rel="noopener noreferrer"><span class="artist-name">Luigi 21 Plus</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="omar courtz"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Omar%20Courtz" target="_blank" rel="noopener noreferrer"><span class="artist-name">Omar Courtz</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="miky woodz"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Miky%20Woodz" target="_blank" rel="noopener noreferrer"><span class="artist-name">Miky Woodz</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="jon z"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jon%20Z" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jon Z</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="jombriel"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jombriel" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jombriel</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="almighty"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Almighty" target="_blank" rel="noopener noreferrer"><span class="artist-name">Almighty</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="noriel"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Noriel" target="_blank" rel="noopener noreferrer"><span class="artist-name">Noriel</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="mackie"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Mackie" target="_blank" rel="noopener noreferrer"><span class="artist-name">Mackie</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="llane"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Llane" target="_blank" rel="noopener noreferrer"><span class="artist-name">Llane</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="crissin"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Crissin" target="_blank" rel="noopener noreferrer"><span class="artist-name">Crissin</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$10K – $20K</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="low" data-name="valka"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20VALKA" target="_blank" rel="noopener noreferrer"><span class="artist-name">VALKA</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="topboy"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Topboy" target="_blank" rel="noopener noreferrer"><span class="artist-name">Topboy</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="yelsid"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Yelsid" target="_blank" rel="noopener noreferrer"><span class="artist-name">Yelsid</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="el dominio"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20El%20Dominio" target="_blank" rel="noopener noreferrer"><span class="artist-name">El Dominio</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="gotay"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Gotay" target="_blank" rel="noopener noreferrer"><span class="artist-name">Gotay</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="ovi el cubano"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Ovi%20El%20Cubano" target="_blank" rel="noopener noreferrer"><span class="artist-name">Ovi El Cubano</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="trebol clan"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Tr%C3%A9bol%20Clan" target="_blank" rel="noopener noreferrer"><span class="artist-name">Trébol Clan</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="anonimus"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Anonimus" target="_blank" rel="noopener noreferrer"><span class="artist-name">Anonimus</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="boza"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Boza" target="_blank" rel="noopener noreferrer"><span class="artist-name">Boza</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="jory boy"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jory%20Boy" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jory Boy</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="yailin la mas viral"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Yailin%20la%20M%C3%A1s%20Viral" target="_blank" rel="noopener noreferrer"><span class="artist-name">Yailin la Más Viral</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="pressure"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Pressure" target="_blank" rel="noopener noreferrer"><span class="artist-name">Pressure</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="amaro"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Amaro" target="_blank" rel="noopener noreferrer"><span class="artist-name">Amaro</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="low" data-name="karen mendez"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Karen%20M%C3%A9ndez" target="_blank" rel="noopener noreferrer"><span class="artist-name">Karen Méndez</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$5K – $10K</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="entry" data-name="maisak"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Maisak" target="_blank" rel="noopener noreferrer"><span class="artist-name">Maisak</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="xantos"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Xantos" target="_blank" rel="noopener noreferrer"><span class="artist-name">Xantos</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="esteban rojas"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Esteban%20Rojas" target="_blank" rel="noopener noreferrer"><span class="artist-name">Esteban Rojas</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="aria vega"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Aria%20Vega" target="_blank" rel="noopener noreferrer"><span class="artist-name">Aria Vega</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="lil silvio y el vega"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Lil%20Silvio%20y%20El%20Vega" target="_blank" rel="noopener noreferrer"><span class="artist-name">Lil Silvio y El Vega</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="lalo ebratt"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Lalo%20Ebratt" target="_blank" rel="noopener noreferrer"><span class="artist-name">Lalo Ebratt</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="el americano 4kt"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20El%20Americano%204KT" target="_blank" rel="noopener noreferrer"><span class="artist-name">El Americano 4KT</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="juan duque"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Juan%20Duque" target="_blank" rel="noopener noreferrer"><span class="artist-name">Juan Duque</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="golpe a golpe"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Golpe%20a%20Golpe" target="_blank" rel="noopener noreferrer"><span class="artist-name">Golpe a Golpe</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="rayo &amp; toby"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Rayo%20%26%20Toby" target="_blank" rel="noopener noreferrer"><span class="artist-name">Rayo &amp; Toby</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="pipe calderon"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Pipe%20Calder%C3%B3n" target="_blank" rel="noopener noreferrer"><span class="artist-name">Pipe Calderón</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="tury"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Tury" target="_blank" rel="noopener noreferrer"><span class="artist-name">Tury</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="nath"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Nath" target="_blank" rel="noopener noreferrer"><span class="artist-name">Nath</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="yandar &amp; yostin"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Yandar%20%26%20Yostin" target="_blank" rel="noopener noreferrer"><span class="artist-name">Yandar &amp; Yostin</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$1K – $5K</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="entry" data-name="soley"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Soley" target="_blank" rel="noopener noreferrer"><span class="artist-name">Soley</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="clooy"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Clooy" target="_blank" rel="noopener noreferrer"><span class="artist-name">Clooy</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="carabine"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Carabine" target="_blank" rel="noopener noreferrer"><span class="artist-name">Carabine</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="geezy"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Geezy" target="_blank" rel="noopener noreferrer"><span class="artist-name">Geezy</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="entry" data-name="fatty"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Fatty" target="_blank" rel="noopener noreferrer"><span class="artist-name">Fatty</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">Bajo consulta</h4><ul class="artist-list">
+        <li data-genre="urbano" data-band="consulta" data-name="ivy queen"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Ivy%20Queen" target="_blank" rel="noopener noreferrer"><span class="artist-name">Ivy Queen</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="consulta" data-name="mike bahia"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Mike%20Bah%C3%ADa" target="_blank" rel="noopener noreferrer"><span class="artist-name">Mike Bahía</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="consulta" data-name="juanka"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Juanka" target="_blank" rel="noopener noreferrer"><span class="artist-name">Juanka</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="consulta" data-name="darkiel"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Darkiel" target="_blank" rel="noopener noreferrer"><span class="artist-name">Darkiel</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="urbano" data-band="consulta" data-name="mr. saik"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Mr.%20Saik" target="_blank" rel="noopener noreferrer"><span class="artist-name">Mr. Saik</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+    </section>
+    <section class="genre" data-genre="popular" aria-labelledby="g-popular">
+      <header class="genre-head"><h3 id="g-popular">Música Popular</h3><span class="genre-count">10</span></header>
+      <div class="tier"><h4 class="tier-name">$45K – $65K</h4><ul class="artist-list">
+        <li data-genre="popular" data-band="low" data-name="luis alfonso"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Luis%20Alfonso" target="_blank" rel="noopener noreferrer"><span class="artist-name">Luis Alfonso</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="popular" data-band="low" data-name="luis alberto posada"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Luis%20Alberto%20Posada" target="_blank" rel="noopener noreferrer"><span class="artist-name">Luis Alberto Posada</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="popular" data-band="low" data-name="jessi uribe"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jessi%20Uribe" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jessi Uribe</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$25K – $40K</h4><ul class="artist-list">
+        <li data-genre="popular" data-band="low" data-name="jhon alex castano"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jhon%20Alex%20Casta%C3%B1o" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jhon Alex Castaño</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="popular" data-band="low" data-name="el andariego"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20El%20Andariego" target="_blank" rel="noopener noreferrer"><span class="artist-name">El Andariego</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="popular" data-band="low" data-name="alzate"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Alzate" target="_blank" rel="noopener noreferrer"><span class="artist-name">Alzate</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="popular" data-band="low" data-name="fernando burbano"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Fernando%20Burbano" target="_blank" rel="noopener noreferrer"><span class="artist-name">Fernando Burbano</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$15K – $25K</h4><ul class="artist-list">
+        <li data-genre="popular" data-band="low" data-name="paola jara"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Paola%20Jara" target="_blank" rel="noopener noreferrer"><span class="artist-name">Paola Jara</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="popular" data-band="low" data-name="hernan gomez"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Hern%C3%A1n%20G%C3%B3mez" target="_blank" rel="noopener noreferrer"><span class="artist-name">Hernán Gómez</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="popular" data-band="low" data-name="nico hernandez"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Nico%20Hern%C3%A1ndez" target="_blank" rel="noopener noreferrer"><span class="artist-name">Nico Hernández</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+    </section>
+    <section class="genre" data-genre="regional" aria-labelledby="g-regional">
+      <header class="genre-head"><h3 id="g-regional">Regional Mexicano</h3><span class="genre-count">4</span></header>
+      <div class="tier"><h4 class="tier-name">$200K+</h4><ul class="artist-list">
+        <li data-genre="regional" data-band="high" data-name="natanael cano"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Natanael%20Cano" target="_blank" rel="noopener noreferrer"><span class="artist-name">Natanael Cano</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">Bajo consulta</h4><ul class="artist-list">
+        <li data-genre="regional" data-band="consulta" data-name="grupo frontera"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Grupo%20Frontera" target="_blank" rel="noopener noreferrer"><span class="artist-name">Grupo Frontera</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="regional" data-band="consulta" data-name="fuerza regida"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Fuerza%20Regida" target="_blank" rel="noopener noreferrer"><span class="artist-name">Fuerza Regida</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="regional" data-band="consulta" data-name="junior h"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Junior%20H" target="_blank" rel="noopener noreferrer"><span class="artist-name">Junior H</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+    </section>
+    <section class="genre" data-genre="vallenato" aria-labelledby="g-vallenato">
+      <header class="genre-head"><h3 id="g-vallenato">Vallenato</h3><span class="genre-count">7</span></header>
+      <div class="tier"><h4 class="tier-name">$200K+</h4><ul class="artist-list">
+        <li data-genre="vallenato" data-band="high" data-name="silvestre dangond"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Silvestre%20Dangond" target="_blank" rel="noopener noreferrer"><span class="artist-name">Silvestre Dangond</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$30K – $60K</h4><ul class="artist-list">
+        <li data-genre="vallenato" data-band="low" data-name="jorge celedon"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jorge%20Celed%C3%B3n" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jorge Celedón</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="vallenato" data-band="low" data-name="felipe pelaez"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Felipe%20Pel%C3%A1ez" target="_blank" rel="noopener noreferrer"><span class="artist-name">Felipe Peláez</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="vallenato" data-band="low" data-name="jean carlos centeno"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jean%20Carlos%20Centeno" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jean Carlos Centeno</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$20K – $30K</h4><ul class="artist-list">
+        <li data-genre="vallenato" data-band="low" data-name="nelson velasquez"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Nelson%20Vel%C3%A1squez" target="_blank" rel="noopener noreferrer"><span class="artist-name">Nelson Velásquez</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="vallenato" data-band="low" data-name="hebert vargas"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Hebert%20Vargas" target="_blank" rel="noopener noreferrer"><span class="artist-name">Hebert Vargas</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="vallenato" data-band="low" data-name="elder dayan"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Elder%20Day%C3%A1n" target="_blank" rel="noopener noreferrer"><span class="artist-name">Elder Dayán</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+    </section>
+    <section class="genre" data-genre="salsa" aria-labelledby="g-salsa">
+      <header class="genre-head"><h3 id="g-salsa">Salsa</h3><span class="genre-count">6</span></header>
+      <div class="tier"><h4 class="tier-name">$60K – $120K</h4><ul class="artist-list">
+        <li data-genre="salsa" data-band="mid" data-name="guayacan orquesta"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Guayac%C3%A1n%20Orquesta" target="_blank" rel="noopener noreferrer"><span class="artist-name">Guayacán Orquesta</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="salsa" data-band="mid" data-name="grupo niche"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Grupo%20Niche" target="_blank" rel="noopener noreferrer"><span class="artist-name">Grupo Niche</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="salsa" data-band="mid" data-name="jerry rivera"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Jerry%20Rivera" target="_blank" rel="noopener noreferrer"><span class="artist-name">Jerry Rivera</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$5K – $40K</h4><ul class="artist-list">
+        <li data-genre="salsa" data-band="entry" data-name="adolescentes orquesta"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Adolescentes%20Orquesta" target="_blank" rel="noopener noreferrer"><span class="artist-name">Adolescentes Orquesta</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="salsa" data-band="entry" data-name="maelo ruiz"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Maelo%20Ruiz" target="_blank" rel="noopener noreferrer"><span class="artist-name">Maelo Ruiz</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="salsa" data-band="entry" data-name="gabino pampini"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Gabino%20Pampini" target="_blank" rel="noopener noreferrer"><span class="artist-name">Gabino Pampini</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+    </section>
+    <section class="genre" data-genre="djs" aria-labelledby="g-djs">
+      <header class="genre-head"><h3 id="g-djs">DJ's</h3><span class="genre-count">5</span></header>
+      <div class="tier"><h4 class="tier-name">$30K – $40K</h4><ul class="artist-list">
+        <li data-genre="djs" data-band="low" data-name="kybba"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Kybba" target="_blank" rel="noopener noreferrer"><span class="artist-name">Kybba</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+      <div class="tier"><h4 class="tier-name">$3K – $12K</h4><ul class="artist-list">
+        <li data-genre="djs" data-band="entry" data-name="natalia paris"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Natalia%20Par%C3%ADs" target="_blank" rel="noopener noreferrer"><span class="artist-name">Natalia París</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="djs" data-band="entry" data-name="marcela reyes"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Marcela%20Reyes" target="_blank" rel="noopener noreferrer"><span class="artist-name">Marcela Reyes</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="djs" data-band="entry" data-name="manguito dj"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Manguito%20DJ" target="_blank" rel="noopener noreferrer"><span class="artist-name">Manguito DJ</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+        <li data-genre="djs" data-band="entry" data-name="fumaratto"><a class="artist" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20cotizar%20a%20Fumaratto" target="_blank" rel="noopener noreferrer"><span class="artist-name">Fumaratto</span><svg class="artist-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only"> — cotizar por WhatsApp</span></a></li>
+      </ul></div>
+    </section>
   </div>
-</div>
+  <div class="empty" id="empty" hidden>
+    <h3>No hay artistas con esos filtros</h3>
+    <p>Prueba otra búsqueda o escríbenos y lo consultamos.</p>
+    <a class="btn btn-line" href="https://wa.me/573178850263?text=Hola%2C%20busco%20un%20artista%20que%20no%20encuentro%20en%20el%20roster" target="_blank" rel="noopener noreferrer">Preguntar por WhatsApp</a>
+  </div>
+</section>
 
-<!-- FOOTER -->
+<section class="contact" id="contacto" aria-labelledby="contact-title">
+  <h2 id="contact-title" class="contact-title" data-reveal>Hablemos de tu próximo show.</h2>
+  <div class="contact-grid" data-reveal>
+    <a class="btn btn-solid btn-xl" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20roster%20de%20artistas" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
+    <ul class="contact-list">
+      <li><span>Correo</span><a href="mailto:sancor.mgmt@gmail.com">sancor.mgmt@gmail.com</a></li>
+      <li><span>Teléfono</span><a href="tel:+573178850263">+57 317 885 0263</a></li>
+      <li><span>Instagram</span><a href="https://instagram.com/s.ancort" target="_blank" rel="noopener noreferrer">@s.ancort</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
 <footer class="footer">
-  <img class="logo" src="logo.webp" alt="Sancor MGMT" width="1024" height="476" loading="lazy">
-  <div class="tagline">Booking &amp; Management</div>
-  <a class="wa-cta" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20roster%20de%20artistas" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.12 1.52 5.86L0 24l6.336-1.652A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.87 0-3.63-.5-5.14-1.38l-.37-.22-3.82.998 1.02-3.72-.24-.38A9.78 9.78 0 012.18 12c0-5.41 4.41-9.82 9.82-9.82 5.41 0 9.82 4.41 9.82 9.82 0 5.41-4.41 9.82-9.82 9.82z"/></svg>
-    Escr&iacute;benos por WhatsApp
-  </a>
-  <div class="links">
-    <a href="mailto:sancor.mgmt@gmail.com">sancor.mgmt@gmail.com</a>
-    <a href="https://instagram.com/s.ancort" target="_blank" rel="noopener">@s.ancort</a>
-    <a href="tel:+573178850263">+57 317 885 0263</a>
-  </div>
-  <p class="legal">Precios referenciales en USD. Sujetos a disponibilidad, fecha y ciudad. No incluyen log&iacute;stica salvo que se indique.<br>&copy; 2026 Sancor MGMT.</p>
+  <img src="img/logo-light.webp" alt="SANCOR MGMT" width="832" height="390" loading="lazy">
+  <p>Precios referenciales en USD. Sujetos a disponibilidad, fecha y ciudad. No incluyen logística salvo que se indique.</p>
+  <p>© 2026 Sancor MGMT</p>
 </footer>
-
-<!-- SCROLL TO TOP -->
-<button class="scroll-top" id="scrollTop" aria-label="Subir">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-</button>
-
-<!-- FLOAT WA -->
-<a class="float-wa" href="https://wa.me/573178850263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20roster%20de%20artistas" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.12 1.52 5.86L0 24l6.336-1.652A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.87 0-3.63-.5-5.14-1.38l-.37-.22-3.82.998 1.02-3.72-.24-.38A9.78 9.78 0 012.18 12c0-5.41 4.41-9.82 9.82-9.82 5.41 0 9.82 4.41 9.82 9.82 0 5.41-4.41 9.82-9.82 9.82z"/></svg>
-</a>
-
-<script>
-(function(){
-  var WA = 'https://wa.me/573178850263?text=';
-
-  var GENRES = {
-    urbano:    'Reggaeton / Urbano',
-    popular:   'Música Popular',
-    regional:  'Regional Mexicano',
-    vallenato: 'Vallenato',
-    salsa:     'Salsa',
-    djs:       "DJ's"
-  };
-
-  // [nombre, género, lo, hi]   lo = null => 'bajo consulta'
-  var ARTISTS = [
-    ['Arcangel','urbano',250,500],
-    ['Beele','urbano',250,500],
-    ['Rauw Alejandro','urbano',250,500],
-    ['Nicky Jam','urbano',200,300],
-    ['Ozuna','urbano',200,300],
-    ['Myke Towers','urbano',200,300],
-    ['Ryan Castro','urbano',200,300],
-    ['Camilo','urbano',200,300],
-    ['Chencho Corleone','urbano',150,250],
-    ['Blessd','urbano',150,250],
-    ['Anuel','urbano',150,250],
-    ['Farruko','urbano',150,250],
-    ['Kapo','urbano',150,250],
-    ['Sebastián Yatra','urbano',150,250],
-    ['Manuel Turizo','urbano',150,250],
-    ['Yandel','urbano',150,250],
-    ['Jhayco','urbano',150,250],
-    ['Justin Quiles','urbano',100,150],
-    ['Young Miko','urbano',100,150],
-    ['Eladio Carrión','urbano',100,150],
-    ['Lenny Tavárez','urbano',55,100],
-    ['De La Ghetto','urbano',55,100],
-    ['Jowell y Randy','urbano',55,100],
-    ['Zion','urbano',55,100],
-    ['Ñengo Flow','urbano',55,100],
-    ['Hades','urbano',55,100],
-    ['Luar La L','urbano',55,100],
-    ['Cosculluela','urbano',55,100],
-    ['Young Chimi','urbano',55,100],
-    ['Lunay','urbano',55,100],
-    ['Greeicy','urbano',55,100],
-    ['Piso 21','urbano',55,100],
-    ['Cali y El Dandee','urbano',55,100],
-    ['Bryant Myers','urbano',55,100],
-    ['Sech','urbano',55,100],
-    ['Dei V','urbano',30,55],
-    ['J Álvarez','urbano',30,55],
-    ['Ñejo','urbano',30,55],
-    ['Darell','urbano',30,55],
-    ['Baby Rasta y Gringo','urbano',30,55],
-    ['Alexis y Fido','urbano',30,55],
-    ['Lennox','urbano',30,55],
-    ['Ovy On The Drums','urbano',30,55],
-    ['Brytiago','urbano',30,55],
-    ['Tony Dize','urbano',30,55],
-    ['Chimbala','urbano',30,55],
-    ['Andy Rivera','urbano',30,55],
-    ['Kevin Roldán','urbano',30,55],
-    ['Alleh y Yorghaki','urbano',30,55],
-    ['Reykon','urbano',30,55],
-    ['Big Soto','urbano',30,55],
-    ['Westcol','urbano',30,55],
-    ['Pirlo','urbano',20,35],
-    ['Kris R','urbano',20,35],
-    ['Luigi 21 Plus','urbano',20,35],
-    ['Omar Courtz','urbano',20,35],
-    ['Miky Woodz','urbano',20,35],
-    ['Jon Z','urbano',20,35],
-    ['Jombriel','urbano',20,35],
-    ['Almighty','urbano',20,35],
-    ['Noriel','urbano',20,35],
-    ['Mackie','urbano',20,35],
-    ['Llane','urbano',20,35],
-    ['Crissin','urbano',20,35],
-    ['VALKA','urbano',10,20],
-    ['Topboy','urbano',10,20],
-    ['Yelsid','urbano',10,20],
-    ['El Dominio','urbano',10,20],
-    ['Gotay','urbano',10,20],
-    ['Ovi El Cubano','urbano',10,20],
-    ['Trébol Clan','urbano',10,20],
-    ['Anonimus','urbano',10,20],
-    ['Boza','urbano',10,20],
-    ['Jory Boy','urbano',10,20],
-    ['Yailin la Más Viral','urbano',10,20],
-    ['Pressure','urbano',10,20],
-    ['Amaro','urbano',10,20],
-    ['Karen Méndez','urbano',10,20],
-    ['Maisak','urbano',5,10],
-    ['Xantos','urbano',5,10],
-    ['Esteban Rojas','urbano',5,10],
-    ['Aria Vega','urbano',5,10],
-    ['Lil Silvio y El Vega','urbano',5,10],
-    ['Lalo Ebratt','urbano',5,10],
-    ['El Americano 4KT','urbano',5,10],
-    ['Juan Duque','urbano',5,10],
-    ['Golpe a Golpe','urbano',5,10],
-    ['Rayo & Toby','urbano',5,10],
-    ['Pipe Calderón','urbano',5,10],
-    ['Tury','urbano',5,10],
-    ['Nath','urbano',5,10],
-    ['Yandar & Yostin','urbano',5,10],
-    ['Soley','urbano',1,5],
-    ['Clooy','urbano',1,5],
-    ['Carabine','urbano',1,5],
-    ['Geezy','urbano',1,5],
-    ['Fatty','urbano',1,5],
-    ['Ivy Queen','urbano',null,null],
-    ['Mike Bahía','urbano',null,null],
-    ['Juanka','urbano',null,null],
-    ['Darkiel','urbano',null,null],
-    ['Mr. Saik','urbano',null,null],
-
-    ['Luis Alfonso','popular',45,65],
-    ['Luis Alberto Posada','popular',45,65],
-    ['Jessi Uribe','popular',45,65],
-    ['Jhon Alex Castaño','popular',25,40],
-    ['El Andariego','popular',25,40],
-    ['Alzate','popular',25,40],
-    ['Fernando Burbano','popular',25,40],
-    ['Paola Jara','popular',15,25],
-    ['Hernán Gómez','popular',15,25],
-    ['Nico Hernández','popular',15,25],
-
-    ['Natanael Cano','regional',250,500],
-    ['Grupo Frontera','regional',null,null],
-    ['Fuerza Regida','regional',null,null],
-    ['Junior H','regional',null,null],
-
-    ['Silvestre Dangond','vallenato',250,350],
-    ['Jorge Celedón','vallenato',30,60],
-    ['Felipe Peláez','vallenato',30,60],
-    ['Jean Carlos Centeno','vallenato',30,60],
-    ['Nelson Velásquez','vallenato',20,30],
-    ['Hebert Vargas','vallenato',20,30],
-    ['Elder Dayán','vallenato',20,30],
-
-    ['Guayacán Orquesta','salsa',60,120],
-    ['Grupo Niche','salsa',60,120],
-    ['Jerry Rivera','salsa',60,120],
-    ['Adolescentes Orquesta','salsa',5,40],
-    ['Maelo Ruiz','salsa',5,40],
-    ['Gabino Pampini','salsa',5,40],
-
-    ['Kybba','djs',30,40],
-    ['Natalia París','djs',3,12],
-    ['Marcela Reyes','djs',3,12],
-    ['Manguito DJ','djs',3,12],
-    ['Fumaratto','djs',3,12]
-  ];
-
-  function bandOf(lo){
-    if(lo===null) return 'consulta';
-    if(lo>=150) return 'high';
-    if(lo>=50) return 'mid';
-    if(lo>=10) return 'low';
-    return 'entry';
-  }
-  function isElite(lo){ return lo!==null && lo>=200; }
-  function rangeKey(lo, hi){
-    if(lo===null) return 'consulta';
-    if(lo>=200) return 'top';
-    if(lo>=100) return 'premium';
-    return lo+'-'+hi;
-  }
-  function tierLabel(lo, hi){
-    if(lo===null) return 'Bajo consulta';
-    if(lo>=200) return '$200K+';
-    if(lo>=100) return '$100K – $200K';
-    return '$'+lo+'K – $'+hi+'K';
-  }
-  function norm(s){
-    return s.normalize ? s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase() : s.toLowerCase();
-  }
-  function escapeHtml(s){
-    return s.replace(/[&<>"']/g, function(c){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-    });
-  }
-  function pad2(n){ return n<10 ? '0'+n : ''+n; }
-
-  var state = { g:'all', b:'all', q:'' };
-  var firstRender = true;
-
-  function buildHtml(){
-    var q = norm(state.q.trim());
-    var byGenre = {};
-    var totalCount = 0;
-
-    for(var i=0;i<ARTISTS.length;i++){
-      var a = ARTISTS[i];
-      var n = a[0], g = a[1], lo = a[2], hi = a[3];
-      if(state.g !== 'all' && state.g !== g) continue;
-      if(state.b !== 'all' && bandOf(lo) !== state.b) continue;
-      if(q && norm(n).indexOf(q) === -1) continue;
-      if(!byGenre[g]) byGenre[g] = { order: [], buckets: {} };
-      var key = rangeKey(lo, hi);
-      if(!byGenre[g].buckets[key]){
-        byGenre[g].buckets[key] = { lo: lo, hi: hi, artists: [] };
-        byGenre[g].order.push(key);
-      }
-      byGenre[g].buckets[key].artists.push({ n: n, lo: lo });
-      totalCount++;
-    }
-
-    var genreOrder = ['urbano','popular','regional','vallenato','salsa','djs'];
-    var html = '';
-    var gIdx = 0;
-    for(var gi=0; gi<genreOrder.length; gi++){
-      var g = genreOrder[gi];
-      if(!byGenre[g]) continue;
-      gIdx++;
-      var bucketsObj = byGenre[g].buckets;
-      var tierKeys = byGenre[g].order.slice();
-      tierKeys.sort(function(a,b){
-        var A = bucketsObj[a], B = bucketsObj[b];
-        if(A.lo===null) return 1;
-        if(B.lo===null) return -1;
-        return B.hi - A.hi;
-      });
-      var gCount = 0;
-      for(var k=0;k<tierKeys.length;k++) gCount += bucketsObj[tierKeys[k]].artists.length;
-
-      var rv = firstRender ? ' reveal' : '';
-      html += '<section class="genre-section" data-g="'+g+'">';
-      html += '<div class="genre-header'+rv+'">';
-      html += '<span class="genre-num">'+pad2(gIdx)+'</span>';
-      html += '<h2 class="genre-name">'+GENRES[g]+'</h2>';
-      html += '<span class="genre-count">'+gCount+(gCount===1?' artista':' artistas')+'</span>';
-      html += '</div>';
-
-      for(var ti=0; ti<tierKeys.length; ti++){
-        var tier = bucketsObj[tierKeys[ti]];
-        var elite = isElite(tier.lo);
-        html += '<div class="tier-block'+(elite?' elite':'')+rv+'">';
-        html += '<div class="tier-header">';
-        html += '<h3 class="tier-name">'+tierLabel(tier.lo, tier.hi)+'</h3>';
-        html += '<span class="tier-line"></span>';
-        html += '</div>';
-        html += '<div class="artist-list">';
-        for(var ai=0; ai<tier.artists.length; ai++){
-          var ar = tier.artists[ai];
-          var classes = 'artist';
-          if(isElite(ar.lo)) classes += ' elite';
-          var msg = encodeURIComponent('Hola, quiero cotizar a '+ar.n);
-          html += '<a class="'+classes+'" href="'+WA+msg+'" target="_blank" rel="noopener">';
-          html += '<span class="name">'+escapeHtml(ar.n)+'</span>';
-          html += '<span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>';
-          html += '</a>';
-        }
-        html += '</div></div>';
-      }
-      html += '</section>';
-    }
-    return { html: html, count: totalCount };
-  }
-
-  function applyRender(){
-    var r = buildHtml();
-    document.getElementById('results').innerHTML = r.html;
-    document.getElementById('countLabel').innerHTML = '<b>'+r.count+'</b>'+(r.count===1?' artista':' artistas');
-    document.getElementById('noResults').classList.toggle('show', r.count===0);
-    var filtering = state.g !== 'all' || state.b !== 'all' || state.q.length > 0;
-    document.getElementById('resetBtn').style.display = filtering ? 'block' : 'none';
-    document.getElementById('pack').classList.toggle('hidden', filtering);
-    if(firstRender){
-      observeReveals();
-    } else {
-      // Si el usuario filtró estando scrolleado, subir al inicio de los resultados.
-      // OJO: medir el sentinel (estático), no el toolbar — offsetTop de un sticky
-      // incluye el corrimiento cuando está pegado y devuelve ≈ scrollY.
-      var top = document.getElementById('toolbarSentinel').offsetTop;
-      if(window.scrollY > top) window.scrollTo({ top: top, behavior: 'auto' });
-    }
-  }
-
-  function render(){ applyRender(); }
-
-  // ---- Reveal one-shot (solo carga inicial, stagger corto, unobserve al entrar) ----
-  function observeReveals(){
-    var els = document.querySelectorAll('.reveal');
-    if(!('IntersectionObserver' in window)){
-      for(var i=0;i<els.length;i++) els[i].classList.add('in');
-      return;
-    }
-    var io = new IntersectionObserver(function(entries){
-      for(var i=0;i<entries.length;i++){
-        var e = entries[i];
-        if(e.isIntersecting){
-          e.target.classList.add('in');
-          io.unobserve(e.target);
-        }
-      }
-    }, { threshold: 0.05, rootMargin: '0px 0px -8% 0px' });
-    for(var j=0;j<els.length;j++){
-      els[j].style.transitionDelay = ((j%4)*0.08)+'s';
-      io.observe(els[j]);
-    }
-  }
-
-  // ---- Count-up de stats ----
-  function countUp(){
-    var stats = document.getElementById('stats');
-    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(reduced || !('IntersectionObserver' in window)) return; // el valor final ya está en el HTML
-    var io = new IntersectionObserver(function(entries){
-      if(!entries[0].isIntersecting) return;
-      io.disconnect();
-      var nums = stats.querySelectorAll('b');
-      for(var i=0;i<nums.length;i++){
-        (function(el){
-          var target = parseInt(el.getAttribute('data-n'),10);
-          var suffix = el.getAttribute('data-suffix') || '';
-          var t0 = null;
-          function step(t){
-            if(!t0) t0 = t;
-            var p = Math.min(1, (t - t0) / 1100);
-            var eased = 1 - Math.pow(1 - p, 3);
-            el.textContent = Math.round(target * eased).toLocaleString('es-CO') + (p===1 ? suffix : '');
-            if(p < 1) requestAnimationFrame(step);
-          }
-          requestAnimationFrame(step);
-        })(nums[i]);
-      }
-    }, { threshold: 0.4 });
-    io.observe(stats);
-  }
-
-  // ---- Búsqueda con debounce ----
-  var input = document.getElementById('search');
-  var clearBtn = document.getElementById('clearBtn');
-  var resetBtn = document.getElementById('resetBtn');
-  var debounceT = null;
-
-  input.addEventListener('input', function(){
-    clearBtn.style.display = input.value ? 'block' : 'none';
-    clearTimeout(debounceT);
-    debounceT = setTimeout(function(){
-      state.q = input.value;
-      render();
-    }, 130);
-  });
-
-  clearBtn.addEventListener('click', function(){
-    input.value = '';
-    state.q = '';
-    clearBtn.style.display = 'none';
-    render();
-    input.focus();
-  });
-
-  function bindPills(rootId, key){
-    var pills = document.getElementById(rootId).querySelectorAll('.pill');
-    for(var i=0;i<pills.length;i++){
-      pills[i].addEventListener('click', function(){
-        state[key] = this.getAttribute('data-'+key);
-        for(var j=0;j<pills.length;j++) pills[j].classList.remove('on');
-        this.classList.add('on');
-        render();
-      });
-    }
-  }
-  bindPills('genrePills', 'g');
-  bindPills('budgetPills', 'b');
-
-  resetBtn.addEventListener('click', function(){
-    state = { g:'all', b:'all', q:'' };
-    input.value = '';
-    clearBtn.style.display = 'none';
-    var allPills = document.querySelectorAll('.pill');
-    for(var i=0;i<allPills.length;i++){
-      var p = allPills[i];
-      p.classList.toggle('on', p.getAttribute('data-g')==='all' || p.getAttribute('data-b')==='all');
-    }
-    render();
-    window.scrollTo({top:0, behavior:'smooth'});
-  });
-
-  // ---- Toolbar compacta + scroll-top vía sentinel (sin listener de scroll) ----
-  var toolbar = document.getElementById('toolbar');
-  var stopBtn = document.getElementById('scrollTop');
-  if('IntersectionObserver' in window){
-    var sio = new IntersectionObserver(function(entries){
-      var out = !entries[0].isIntersecting;
-      toolbar.classList.toggle('compact', out);
-      stopBtn.classList.toggle('show', out);
-    }, { rootMargin: '120px 0px 0px 0px' });
-    sio.observe(document.getElementById('toolbarSentinel'));
-  }
-  stopBtn.addEventListener('click', function(){
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-
-  // ---- Barra de progreso: fallback solo si no hay animation-timeline ----
-  if(!(window.CSS && CSS.supports && CSS.supports('animation-timeline: scroll()'))){
-    var progressEl = document.getElementById('progress');
-    var ticking = false;
-    window.addEventListener('scroll', function(){
-      if(ticking) return;
-      ticking = true;
-      requestAnimationFrame(function(){
-        var doc = document.documentElement;
-        var max = doc.scrollHeight - doc.clientHeight;
-        var y = window.scrollY || doc.scrollTop;
-        progressEl.style.transform = 'scaleX(' + (max>0 ? Math.min(1, y/max) : 0) + ')';
-        ticking = false;
-      });
-    }, { passive: true });
-  }
-
-  // ---- Init ----
-  var heroStat = document.querySelector('#stats b[data-n]');
-  if(heroStat && ARTISTS.length !== 134){ heroStat.setAttribute('data-n', ARTISTS.length); heroStat.textContent = ARTISTS.length; }
-
-  applyRender();
-  firstRender = false;
-  countUp();
-  requestAnimationFrame(function(){
-    requestAnimationFrame(function(){ document.body.classList.add('ready'); });
-  });
-})();
-</script>
 </body>
 </html>
